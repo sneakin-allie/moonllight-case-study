@@ -3,17 +3,16 @@ import { ThemeProvider } from "styled-components";
 import theme from './components/Theme';
 import GlobalStyles from "./components/styles/Global";
 import Header from "./components/Header";
-import { Container } from "./components/styles/Container.styled";
-
+import Premise from "./components/Premise";
+import QuickHits from "./components/QuickHits";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
         <Header />
-        <Container>
-          <h1>Hello World</h1>
-        </Container>
+        <Premise />
+        <QuickHits />
     </ThemeProvider>
   );
 }
