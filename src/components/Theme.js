@@ -6,7 +6,7 @@ There are no requirements or limitations on its structure; we can put anything a
 // Define what props.theme will look like
 const theme = { 
     colors: {
-        darkGreen: '#052324',
+        darkgreen: '#052324',
         teal: '#047870',
         emerald: '#1DCA7F',
         aquamarine: '#7EE8B9',
@@ -17,10 +17,7 @@ const theme = {
         slategray: '#7B9291', 
         silver: '#BDC8C8',
     },
-    fonts: {
-        IBMPlexSerif: 'IBM Plex Serif',
-        SpaceGrotesk: 'Space Grotesk',
-    },
+
 };
 
 export default theme;

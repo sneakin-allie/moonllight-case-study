@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
     // nesting; will only style the h1 inside the header
     h1 {
         color: #7B9291;
+        font-family: 'Space Grotesk';
     }
 
     h2 {

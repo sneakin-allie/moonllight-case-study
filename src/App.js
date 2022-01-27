@@ -1,18 +1,16 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
 import theme from './components/Theme';
+import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/Global";
-import Header from "./components/Header";
-import Premise from "./components/Premise";
-import QuickHits from "./components/QuickHits";
+import ProjectGoals from "./components/ProjectGoals";
+import Discovery from "./components/Discovery";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-        <Header />
-        <Premise />
-        <QuickHits />
+        <ProjectGoals />
+        <Discovery />
     </ThemeProvider>
   );
 }

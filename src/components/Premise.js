@@ -12,7 +12,9 @@ export default function Premise() {
                 <p>
                     As huge supporters of the beautiful game ourselves, we jumped at the chance to pair live data from the sport with friendly competition.
                 </p>
+                
             </div>
+            
         </StyledPremise>
     )
 }
