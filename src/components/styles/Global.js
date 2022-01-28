@@ -2,9 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
-    body {
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        padding: 0;
         margin: 0;
-    };
+    }
 
     h1 {
         font-family: 'Space Grotesk';
@@ -14,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
 
     h2 {
         font-family: 'Space Grotesk';
+        font-weight: normal;
         font-size: 3em;
     }
 
@@ -31,16 +37,14 @@ const GlobalStyles = createGlobalStyle`
 
     h5 {
         font-family: 'Space Grotesk';
+        font-weight: normal;
         font-size: 1.5em;
     }
 
     h6 {
         font-family: 'Space Grotesk';
+        font-weight: normal;
         font-size: 1em;
-    }
-
-    img {
-        width: 100%;
     }
 
 `;
