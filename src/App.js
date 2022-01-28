@@ -11,11 +11,15 @@ import Results from "./components/Results";
 import ProjectGoalsImages from "./components/ProjectGoalsImages";
 import DiscoveryImages from "./components/DiscoveryImages";
 import DesignImages from "./components/DesignImages";
+import QuickHits from "./components/QuickHits";
+import Ayana from "./components/Ayana";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+        <Ayana />
+        <QuickHits />
         <ProjectGoals />
           <ProjectGoalsImages />
         <Discovery />
