@@ -6,7 +6,7 @@ export const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     border: none;
-    padding: 2rem 12.5rem 0 12.5rem;
+    padding: 2rem 12.5rem;
 
     div {
         display: flex;
@@ -31,7 +31,11 @@ export const StyledNav = styled.nav`
         color: white;
         text-decoration: none;
         margin: 1em;
-        // add link, visited, hover, active
+
+        &:visited {
+            text-decoration: none;
+            color: white;
+        }
     }
 
 `

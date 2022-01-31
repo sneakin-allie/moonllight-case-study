@@ -7,33 +7,44 @@ export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     border: none;
     padding-top: 12.5rem;
-
-    div { // CASE STUDY & MOONLLIGHT
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-
-    div > p {
-        font-family: "Space Grotesk";
-        font-weight: lighter;
-        font-size: 10em;
-        color: ${({ theme }) => theme.colors.slategray};
-    }
+    padding-bottom: 28rem;
 
     h5 { // CASE STUDY
         color: ${({ theme }) => theme.colors.slategray};
         letter-spacing: 0.25em;
+        grid-column-start: 3;
+        grid-column-end: 5;
         margin: 0;
     }
 
-    p {
+    svg {
         grid-column-start: 5;
-        grid-column-end: 14;
+        grid-column-end: 15;
+        margin: auto;
+    }
+
+    p { // Moonllight
+        font-family: "Space Grotesk";
+        font-weight: lighter;
+        font-size: 10em;
+        color: ${({ theme }) => theme.colors.slategray};
+        grid-column-start: 3;
+        grid-column-end: 11;
+        padding: 4.5rem 0 3.125rem 0;
+        margin: 0;
+    }
+
+    div {
+        grid-column-start: 5;
+        grid-column-end: 13;
+    }
+
+    div > p { // rest of text
         font-family: "IBM Plex Serif";
         font-weight: normal;
         font-size: 1.875em;
         color: ${({ theme }) => theme.colors.palemint};
-        margin: 0;
+        line-height: 1.5em;
     }
 
 `;
