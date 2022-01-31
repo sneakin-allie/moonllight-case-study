@@ -6,6 +6,6 @@ export const StyledHeroImage = styled.div`
 
     img {
         width: 100%;
-        margin: 9rem 12.625rem;
+        margin: -18.75rem 12.625rem 9rem 12.625rem;
     }
 `

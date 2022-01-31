@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     border: none;
     padding-top: 12.5rem;
-    padding-bottom: 28rem;
+    padding-bottom: 25rem;
 
     h5 { // CASE STUDY
         color: ${({ theme }) => theme.colors.slategray};
@@ -45,6 +45,12 @@ export const StyledHeader = styled.header`
         font-size: 1.875em;
         color: ${({ theme }) => theme.colors.palemint};
         line-height: 1.5em;
+    }
+
+    img { // hero image
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 16;
     }
 
 `;
