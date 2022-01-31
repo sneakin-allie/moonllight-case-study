@@ -10,15 +10,18 @@ export const StyledPremise = styled.section`
         font-family: "Space Grotesk";
         font-weight: bold;
         font-size: 5.625em;
+        color: ${({ theme }) => theme.colors.darkgreen};
         grid-column-start: 4;
         grid-column-end: 9;
+        margin-bottom: 2rem;
     }
 
     p {
         font-family: "IBM Plex Serif";
         font-weight: normal;
         font-size: 1.875em;
-        line-height: 1.5em;
+        color: ${({ theme }) => theme.colors.gunmetalgray};
+        line-height: 1.6em;
         grid-column-start: 4;
         grid-column-end: 13;
     }
