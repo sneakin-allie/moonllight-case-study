@@ -17,7 +17,10 @@ const theme = {
         slategray: '#7B9291', 
         silver: '#BDC8C8',
     },
-
+    fonts: {
+        ibmPlexSerif: "IBM Plex Serif",
+        spaceGrotesk: "Space Grotesk",
+    },
 };
 
 export default theme;

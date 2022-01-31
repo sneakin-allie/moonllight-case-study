@@ -13,11 +13,19 @@ import DiscoveryImages from "./components/DiscoveryImages";
 import DesignImages from "./components/DesignImages";
 import QuickHits from "./components/QuickHits";
 import Ayana from "./components/Ayana";
+import Premise from "./components/Premise";
+import HeroImage from "./components/HeroImage";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+        <Nav />
+        <Header />
+        <HeroImage />
+        <Premise />
         <Ayana />
         <QuickHits />
         <ProjectGoals />
