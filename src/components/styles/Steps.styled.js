@@ -25,10 +25,12 @@ export const StyledSteps = styled.section`
 
     h5, h3 {
         margin: 0;
+        color: ${({ theme }) => theme.colors.darkgreen};
     }
 
     h1 {
         margin-top: 1.5rem;
+        color: ${({ theme }) => theme.colors.darkgreen};
     }
 
     p {
@@ -37,6 +39,7 @@ export const StyledSteps = styled.section`
         line-height: 2em;
         margin-top: 1rem;
         margin-bottom: 4.5rem;
+        color: ${({ theme }) => theme.colors.gunmetalgray};
     }
 
 `
