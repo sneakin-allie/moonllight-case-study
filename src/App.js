@@ -19,6 +19,7 @@ import Nav from "./components/Nav";
 import HeroImage from "./components/HeroImage";
 import Testimonial from "./components/Testimonial";
 import Explore from "./components/Explore";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Results />
         <Testimonial />
         <Explore />
+        <Footer />
     </ThemeProvider>
   );
 }
