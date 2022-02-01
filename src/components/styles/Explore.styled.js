@@ -38,6 +38,10 @@ export const StyledCard = styled.div`
 `
 
 export const StyledNotesForm = styled.div`
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 12rem;
 
     h1 { // Let's Compare Notes
         color: white;
@@ -50,7 +54,7 @@ export const StyledNotesForm = styled.div`
         font-size: 1.5em;
         line-height: 2.5rem;
         color: ${({ theme }) => theme.colors.silver};
-        margin: 0;
+        margin: 2.25rem 0 3.313rem 0;
     }
 
     label {
@@ -64,12 +68,29 @@ export const StyledNotesForm = styled.div`
         background: transparent;
         padding: 0;
         border: 1px solid ${({ theme }) => theme.colors.slategray};
-        margin-bottom: 2rem;
+        margin: 0.25rem 0 2rem 0;
+        width: 100%;
+        height: 3rem;
     }
 
     textarea {
         background: transparent;
         padding: 0;
         border: 1px solid ${({ theme }) => theme.colors.slategray};
+        width: 100%;
+        height: 12.5rem;
+        margin: 0.25rem 0 2rem 0;
+    }
+
+    button {
+        background-color: ${({ theme }) => theme.colors.limegreen};
+        color: ${({ theme }) => theme.colors.darkgreen};
+        font-family: "Space Grotesk";
+        font-weight: normal;
+        font-size: 1em;
+        letter-spacing: 0.25em;
+        padding: 1.563rem 12.688rem 1.375rem 1.5rem;
+        border: none;
+        box-shadow: 0 0 0.25rem 0 ${({ theme }) => theme.colors.darkslategray};
     }
 `
