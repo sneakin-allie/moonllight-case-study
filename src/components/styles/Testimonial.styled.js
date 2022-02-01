@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 /*
 export const StyledMotifs = styled.div`
-    background-color: ${({ theme }) => theme.colors.lightgray};
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
@@ -12,6 +11,17 @@ export const StyledMotifs = styled.div`
     }
 `
 */
+
+export const StyledMotifs = styled.div`
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1.5rem;
+
+`
+
+export const StyledGrayLines = styled.svg`
+    grid-column-start: 4;
+`
 
 export const StyledTestimonial = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};

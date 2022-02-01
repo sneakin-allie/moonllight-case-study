@@ -1,12 +1,6 @@
-/* 
-A theme is a JavaScript object that all of our components will have access to via a prop. 
-There are no requirements or limitations on its structure; we can put anything at all in there.
-*/
-
-// Define what props.theme will look like
 const theme = { 
     colors: {
-        lightgray: "#E5E5E5",
+        lightgray: "#E5E5E5", // might not need this
         darkgreen: "#052324",
         teal: "#047870",
         emerald: "#1DCA7F",
