@@ -1,15 +1,27 @@
 import styled from "styled-components";
 
 export const StyledDiscoveryImages = styled.section`
-    margin-bottom: 13.5rem;
-
     div {
         display: flex;
-        justify-content: center;
-        margin: 2.25rem 12.625rem;
     }
+`
 
-    img {
-        width: 100%
-    }
+export const StyledHandDrawnWires = styled.img`
+    width: 100%;
+    margin: 9rem 12.625rem 2.25rem 12.625rem;
+`
+
+export const StyledDigitalWires = styled.img`
+    width: 100%;
+    margin: 2.25rem 12.625rem 2.25rem 12.625rem;
+`
+
+export const StyledIcons = styled.img`
+    width: 100%;
+    margin: 2.25rem 0.75rem 13.5rem 12.625rem;
+`
+
+export const StyledMoonllightLogo = styled.img`
+    width: 100%;
+    margin: 2.25rem 12.625rem 13.5rem 0.75rem;
 `

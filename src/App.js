@@ -17,6 +17,7 @@ import Premise from "./components/Premise";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import HeroImage from "./components/HeroImage";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Develop />
         <Mark />
         <Results />
+        <Testimonial />
     </ThemeProvider>
   );
 }

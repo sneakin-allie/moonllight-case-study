@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 export const StyledProjectGoalsImages = styled.section`
     display: flex;
-    justify-content: space-evenly;
-    margin: 13.5rem 0;
+`
+export const StyledImageOne = styled.img`
+    width: 100%;
+    margin: 9rem 4.188rem 34.25rem 12.625rem; 
+`
+
+export const StyledImageTwo = styled.img`
+    width: 100%;
+    margin: 16rem 5.75rem 13.5rem 4.188rem; 
 `
