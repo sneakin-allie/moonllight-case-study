@@ -1,37 +1,23 @@
 import styled from "styled-components";
 
-/*
-export const StyledMotifs = styled.div`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-
-    svg {
-
-    }
-`
-*/
-
-export const StyledMotifs = styled.div`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-
-`
-
-export const StyledGrayLines = styled.svg`
-    grid-column-start: 4;
-`
-
-export const StyledTestimonial = styled.section`
+export const TestimonialGrid = styled.div`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
+`
 
-    svg {
-        grid-column-start: 7;
-    }
+export const WhiteLines = styled.div`
+    grid-column-start: 7;
+`
+
+export const ThreeSquares = styled.div`
+    grid-column-start: 13;
+`
+
+export const StyledQuote = styled.div`
+    grid-column-start: 4;
+    grid-column-end: 14;
 
     div {
         background-color: ${({ theme }) => theme.colors.mint};
@@ -61,6 +47,10 @@ export const StyledTestimonial = styled.section`
         grid-column-start: 5;
         grid-column-end: 9;
     }
+`
+
+export const WhiteSquares = styled.div`
+    grid-column-start: 13;
 `
 
 /* example of styling individual imgs

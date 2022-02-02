@@ -89,8 +89,13 @@ export const StyledNotesForm = styled.div`
         font-weight: normal;
         font-size: 1em;
         letter-spacing: 0.25em;
-        padding: 1.563rem 12.688rem 1.375rem 1.5rem;
+        width: 19.125rem;
+        height: 4.188rem;
         border: none;
         box-shadow: 0 0 0.25rem 0 ${({ theme }) => theme.colors.darkslategray};
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
     }
 `

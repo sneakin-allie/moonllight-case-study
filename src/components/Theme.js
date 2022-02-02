@@ -10,7 +10,8 @@ const theme = {
         gunmetalgray: "#455C5A", 
         slategray: "#7B9291", 
         silver: "#BDC8C8",
-        limegreen: "#1DCA7F",
+        limegreen: "#1DCA7F", // for button only
+        darkestgreen: "#041F20" // for nav in footer only
     },
     fonts: {
         ibmPlexSerif: "IBM Plex Serif",
