@@ -14,9 +14,6 @@ export const StyledFooter = styled.section`
     h6 { // Navigate, Explore & Get In Touch
         color: ${({ theme }) => theme.colors.palemint};
         letter-spacing: 0.25em;
-        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
     }
 
     a {
@@ -44,6 +41,12 @@ export const StyledNavigate = styled.ul`
     margin: 0;
     grid-column-start: 11;
     grid-column-end: 13;
+
+    h6 {
+        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 `
 
 export const StyledExplore = styled.ul`
@@ -52,6 +55,12 @@ export const StyledExplore = styled.ul`
     margin: 0;
     grid-column-start: 14;
     grid-column-end: 16;
+
+    h6 {
+        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 `
 
 export const StyledBottomNav = styled.nav`

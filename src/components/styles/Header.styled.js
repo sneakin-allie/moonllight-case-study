@@ -1,13 +1,51 @@
 import styled from "styled-components";
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.section`
+    background-color: ${({ theme }) => theme.colors.darkgreen};
+`;
+
+export const StyledNav = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 12.625rem 0 12.625rem;
+    
+    div {
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        display: inline-block;
+    }
+
+    h6 { // Insightful web applications
+        color: white;
+        display: inline-block;
+        padding-left: 1rem;
+        margin: 0;
+    }
+
+    a { // nav links
+        font-family: "Space Grotesk";
+        font-weight: normal;
+        font-size: 0.875em;
+        color: white;
+        text-decoration: none;
+        margin: 1em;
+
+        &:visited {
+            text-decoration: none;
+            color: white;
+        }
+    }
+`
+
+export const HeaderGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    background-color: ${({ theme }) => theme.colors.darkgreen};
-    border: none;
-    padding-top: 12.5rem;
-    padding-bottom: 27.688rem;
+    padding: 13.5rem 0 28rem 0;
 
     h5 { // CASE STUDY
         color: ${({ theme }) => theme.colors.slategray};
@@ -17,7 +55,7 @@ export const StyledHeader = styled.header`
         margin: 0;
     }
 
-    svg {
+    svg { // line/border; to be done in CSS
         grid-column-start: 5;
         grid-column-end: 15;
         margin: auto;
@@ -34,7 +72,7 @@ export const StyledHeader = styled.header`
         margin: 0;
     }
 
-    div {
+    div {  // p text div
         grid-column-start: 5;
         grid-column-end: 13;
     }
@@ -47,11 +85,4 @@ export const StyledHeader = styled.header`
         line-height: 1.5em;
         padding: 0;
     }
-
-    img { // hero image
-        width: 100%;
-        grid-column-start: 2;
-        grid-column-end: 16;
-    }
-
-`;
+`
