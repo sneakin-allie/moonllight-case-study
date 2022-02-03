@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};
+    padding-top: 4.5rem;
 `
 
 export const FooterGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
+    margin: 0 4.5rem 4.5rem 4.5rem;
 
     p {
         padding: 0;
@@ -17,6 +19,9 @@ export const FooterGrid = styled.div`
     h6 { // Navigate & Explore
         color: ${({ theme }) => theme.colors.palemint};
         letter-spacing: 0.25em;
+        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
+        margin: 0 0 1.5rem 0;
+        padding-bottom: 1.5rem;
     }
 
     a {
@@ -27,54 +32,76 @@ export const FooterGrid = styled.div`
         text-decoration: none;
         line-height: 3rem;
     }
-
-    svg {
-        grid-column-start: 1;
-    }
 `
 
 export const StyledTealSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.teal};
+    grid-column-start: 9;
+    height: 3rem;
     opacity: 0.5;
     width: 3rem;
-    height: 3rem;
-    grid-column-start: 9;
+`
+
+export const StyledOmbreSquares = styled.div`
+    grid-column-start: 8;
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 4.5rem;
+    }
+`
+
+export const StyledX = styled.div`
+    grid-column-start: 1;
+    position: relative;
+
+    svg {
+        position: absolute;
+        right: 2rem;
+        top: 10rem;
+    }
 `
 
 export const StyledPractApp = styled.div`
-    font-family: "IBM Plex Serif";
-    font-weight: 300;
-    font-size: 9.375em;
     color: ${({ theme }) => theme.colors.silver};
+    font-family: "IBM Plex Serif";
+    font-weight: 200;
+    font-size: 9.375em;
     grid-column-start: 2;
     grid-column-end: 10;
+    line-height: 9.375rem;
 `
 
 export const StyledNavigate = styled.ul`
     list-style-type: none;
-    padding: 0;
     grid-column-start: 11;
     grid-column-end: 13;
-
-    h6 {
-        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+    margin: 0;
+    padding: 0;
 `
 
 export const StyledExplore = styled.ul`
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     grid-column-start: 14;
     grid-column-end: 16;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-    h6 {
-        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
+    svg {
+        padding-right: 1rem;
     }
+`
+
+export const StyledSquareGroup = styled.div`
+    grid-column-start: 1;
+    position: relative;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+    }
+
 `
 
 export const StyledNav = styled.nav`

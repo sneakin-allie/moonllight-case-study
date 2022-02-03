@@ -15,6 +15,7 @@ export const StyledResults = styled.section`
     h2 {
         grid-column-start: 6;
         grid-column-end: 14;
+        line-height: 4.25rem;
         margin: 0;
     }
 
