@@ -3,38 +3,13 @@ import styled from "styled-components";
 export const StyledTestimonial = styled.section`
 `
 
-export const StyledSmMintSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
-    grid-column-start: 10;
-    height: 1.5rem;
-    width: 1.5rem;
-`
-
-export const StyledGrayLines = styled.div`
-    bottom: 0;
-    grid-column-start: 4;
-    opacity: .25;
-`
+// --- Grids --- //
 
 export const WhiteGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     padding: 0 4.5rem;
-`
-
-export const StyledDarkGreenSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.darkgreen};
-    grid-column-start: 9;
-    height: 8.025rem;
-    width: 8.025rem;
-`
-
-export const StyledLgMintSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
-    grid-column-start: 13;
-    height: 8.025rem;
-    width: 8.025rem;
 `
 
 export const GreenGrid = styled.div`
@@ -44,20 +19,7 @@ export const GreenGrid = styled.div`
     grid-column-gap: 1.5rem;
     padding: 0 4.5rem;
 `
-
-export const WhiteLines = styled.div`
-    grid-column-start: 7;
-`
-
-export const ThreeSquares = styled.div`
-    grid-column-start: 13;
-    position: relative;
-
-    svg {
-        position: absolute;
-        bottom: 0;
-    }
-`
+// --- Content --- //
 
 export const StyledQuotation = styled.div`
     background-color: ${({ theme }) => theme.colors.mint};
@@ -86,27 +48,6 @@ export const StyledQuote = styled.div`
     }
 `
 
-export const SmWhiteSquare = styled.div`
-    grid-column-start: 12;
-`
-
-export const SixSquares = styled.div`
-    grid-column-start: 9;
-`
-
-export const SquareGroup = styled.div`
-    grid-column-start: 13;
-`
-
-export const StyledSmGreenSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.limegreen};
-    grid-column-start: 10;
-    height: 1.5rem;
-    margin-top: 4rem;
-    opacity: .5;
-    width: 1.5rem;
-`
-
 export const StyledClient = styled.div`
     border-left: 8px solid white;
     grid-column-start: 4;
@@ -120,14 +61,92 @@ export const StyledClient = styled.div`
     }
 `
 
-export const StyledOmbreSquares = styled.div`
-    margin: 0 0 2rem 19rem;
+// --- Motifs --- //
+
+export const GrayLines = styled.div`
+    bottom: 0;
+    grid-column-start: 4;
+    opacity: .25;
+`
+
+export const DarkGreenSquare = styled.div`
+    background-color: ${({ theme }) => theme.colors.darkgreen};
+    grid-column-start: 9;
+    height: 8.025rem;
+    width: 8.025rem;
+`
+
+export const SmMintSquare = styled.div`
+    background-color: ${({ theme }) => theme.colors.mint};
+    grid-column-start: 10;
+    height: 1.5rem;
+    width: 1.5rem;
+`
+
+export const LgMintSquare = styled.div`
+    background-color: ${({ theme }) => theme.colors.mint};
+    grid-column-start: 13;
+    height: 8.025rem;
+    width: 8.025rem;
+`
+
+export const WhiteLines = styled.div`
+    grid-column-start: 7;
+`
+
+export const ThreeSquares = styled.div`
+    grid-column-start: 13;
+    position: relative;
+
+    svg {
+        position: absolute;
+        bottom: 0;
+    }
+`
+
+export const SmWhiteSquare = styled.div`
+    background-color: white;
+    height: 1.125em;
+    margin-left: 54.5rem;
+    width: 1.125rem;
+`
+
+export const OmbreSquares = styled.div`
+    margin: 1rem 0 -4.5rem 19rem;
+`
+
+export const LgPaleMintSquare = styled.div`
+    background-color: ${({ theme }) => theme.colors.mint};
+    height: 8rem;
+    margin: 2.5rem 0 -3.5rem 56rem;
+    opacity: .05;
+    width: 8rem;
+`
+
+export const FiveSquares = styled.div`
+    grid-column-start: 9;
+    margin: -2.5rem 0 0 0;
+`
+
+export const WindowPanes = styled.div`
+    grid-column-start: 13;
+    margin: -3rem 0 0 0;
+`
+
+export const SmGreenSquare = styled.div`
+    background-color: ${({ theme }) => theme.colors.limegreen};
+    grid-column-start: 10;
+    height: 1.5rem;
+    margin: 2.5rem 0 1.5rem 0;
+    opacity: .5;
+    width: 1.5rem;
 `
 
 export const X = styled.div`
     grid-column-start: 6;
+    margin: 3.5rem 0 0 0;
 `
 
-export const WhiteSquares = styled.div`
+export const WhiteSquaresX = styled.div`
     grid-column-start: 13;
 `
