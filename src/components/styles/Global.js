@@ -43,6 +43,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1em;
     }
 
+    img {
+        width: 100%;
+    }
+
 `;
 
 export default GlobalStyles;

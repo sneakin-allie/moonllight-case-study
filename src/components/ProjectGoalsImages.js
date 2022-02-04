@@ -5,8 +5,12 @@ import { StyledProjectGoalsImages, StyledImageOne, StyledImageTwo } from "./styl
 export default function ProjectGoalsImages() {
     return (
         <StyledProjectGoalsImages>
-            <StyledImageOne src={moodboard} alt="moodboard with screenshots of sports apps" />
-            <StyledImageTwo src={themes} alt="themes and motifs" />
+            <StyledImageOne>
+                <img src={moodboard} alt="moodboard with screenshots of sports apps" />
+            </StyledImageOne>
+            <StyledImageTwo>
+                <img src={themes} alt="themes and motifs" />
+            </StyledImageTwo> 
         </StyledProjectGoalsImages>
     )
 }

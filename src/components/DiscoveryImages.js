@@ -7,15 +7,19 @@ import { StyledDiscoveryImages, StyledHandDrawnWires, StyledDigitalWires, Styled
 export default function DiscoveryImages() {
     return (
         <StyledDiscoveryImages>
+            <StyledHandDrawnWires>
+                <img src={wireframes} alt="hand drawn wireframes" />
+            </StyledHandDrawnWires>
+            <StyledDigitalWires>
+                <img src={blackwhitewires} alt="digital wireframes in black and white" />
+            </StyledDigitalWires>
             <div>
-                <StyledHandDrawnWires src={wireframes} alt="hand drawn wireframes" />
-            </div>
-            <div>
-                <StyledDigitalWires src={blackwhitewires} alt="digital wireframes in black and white" />
-            </div>
-            <div>
-                <StyledIcons src={icons} alt="examples of icons" />
-                <StyledMoonllightLogo src={logo} alt="Moonllight's logo and color scale" />
+                <StyledIcons>
+                    <img src={icons} alt="examples of icons" />
+                </StyledIcons>
+                <StyledMoonllightLogo>
+                    <img src={logo} alt="Moonllight's logo and color scale" />
+                </StyledMoonllightLogo>
             </div> 
         </StyledDiscoveryImages>
     )

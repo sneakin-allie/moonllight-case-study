@@ -22,11 +22,7 @@ export const CardFlex = styled.div`
 
 export const StyledCard = styled.div`
     margin: 4rem;
-
-    img {
-        width: 100%;
-    }
-
+    
     div {
         margin: 3rem 0 2rem 0;
     }

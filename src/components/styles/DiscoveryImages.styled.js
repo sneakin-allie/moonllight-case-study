@@ -6,22 +6,18 @@ export const StyledDiscoveryImages = styled.section`
     }
 `
 
-export const StyledHandDrawnWires = styled.img`
-    width: 100%;
+export const StyledHandDrawnWires = styled.div`
     margin: 9rem 12.625rem 2.25rem 12.625rem;
 `
 
-export const StyledDigitalWires = styled.img`
-    width: 100%;
+export const StyledDigitalWires = styled.div`
     margin: 2.25rem 12.625rem 2.25rem 12.625rem;
 `
 
-export const StyledIcons = styled.img`
-    width: 100%;
+export const StyledIcons = styled.div`
     margin: 2.25rem 0.75rem 13.5rem 12.625rem;
 `
 
-export const StyledMoonllightLogo = styled.img`
-    width: 100%;
+export const StyledMoonllightLogo = styled.div`
     margin: 2.25rem 12.625rem 13.5rem 0.75rem;
 `
