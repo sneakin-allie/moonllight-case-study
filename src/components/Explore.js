@@ -1,20 +1,32 @@
-import { CardFlex, StyledCard, StyledExplore, StyledNotesForm } from "./styles/Explore.styled";
+import { CardFlex, StyledCard, StyledExplore, StyledNotesForm, StyledNumber, StyledTitle } from "./styles/Explore.styled";
 import stickynotes from "../assets/stickynotes.jpg";
 import developing from "../assets/developing.jpg";
 
 export default function Explore() {
     return (
         <StyledExplore>
-            <h5>EXPLORE OUR OTHER SERVICES</h5>
+            <StyledTitle>
+                <h5>EXPLORE OUR OTHER SERVICES</h5>
+            </StyledTitle>
             <CardFlex>
                 <StyledCard>
                     <img src={stickynotes} alt="brainstorming with sticky notes" />
-                    <h3>Product Discovery</h3>
+                    <div>
+                        <StyledNumber>
+                            01
+                        </StyledNumber>
+                        <h3>Product Discovery</h3>
+                    </div>
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </StyledCard>
                 <StyledCard>
                     <img src={developing} alt="developer working at a computer" />
-                    <h3>Development</h3>
+                    <div>
+                        <StyledNumber>
+                            03
+                        </StyledNumber>
+                        <h3>Development</h3>
+                    </div>    
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </StyledCard>
             </CardFlex>
