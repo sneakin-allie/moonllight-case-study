@@ -1,37 +1,33 @@
 import styled from "styled-components";
 
 export const StyledTestimonial = styled.section`
-`
-
-// --- Grids --- //
-
-export const WhiteGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-    padding: 0 4.5rem;
-`
-
-export const GreenGrid = styled.div`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     padding: 0 4.5rem;
 `
+
 // --- Content --- //
 
-export const StyledQuotation = styled.div`
+export const Quotation = styled.svg`
     background-color: ${({ theme }) => theme.colors.mint};
-    display: flex;
-    grid-column-start: 5;
-    height: 8rem;
-    margin: 0;
-    width: 8rem;
+    padding: 2.875rem 2.5rem;
+    width: 3rem;
 
-    svg {
-        margin: auto;
-        width: 3rem;
+    @media (max-width: 1280px) {
+        padding: 2.625rem 2.25rem;
+        width: 2.75rem;
+    }
+
+    @media (max-width: 1040px) {
+        padding: 2.375rem 2rem;
+        width: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+        padding: 2.125rem 1.75rem;
+        width: 2.25rem;
     }
 `
 
@@ -41,10 +37,34 @@ export const StyledQuote = styled.div`
     grid-column-end: 14;
     padding-left: 5rem;
 
+    @media (max-width: 1280px) {
+        grid-column-start: 3;
+    }
+
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+    }
+
+    @media (max-width: 800px) {
+        grid-column-start: 1;
+    }
+
     h2 { // "Our partnership..."
         color: white;
         line-height: 4.25rem;
         margin: 0;
+
+        @media (max-width: 1280px) {
+            line-height: 4rem;
+        }
+
+        @media (max-width: 1040px) {
+            line-height: 3.75rem;
+        }
+
+        @media (max-width: 800px) {
+            line-height: 3.5rem;
+        }
     }
 `
 
@@ -54,6 +74,11 @@ export const StyledClient = styled.div`
     grid-column-end: 14;
     padding-left: 5rem;
 
+    @media (max-width: 800px) {
+        grid-column-start: 1;
+        grid-column-end: 15;
+    }
+
     h5 { // Jason & Founder
         color: ${({ theme }) => theme.colors.slategray};
         letter-spacing: 0.25em;
@@ -62,6 +87,15 @@ export const StyledClient = styled.div`
 `
 
 // --- Motifs --- //
+
+// --- White BG --- //
+
+export const SmMintSquare = styled.div`
+    background-color: ${({ theme }) => theme.colors.mint};
+    grid-column-start: 10;
+    height: 1.5rem;
+    width: 1.5rem;
+`
 
 export const GrayLines = styled.div`
     bottom: 0;
@@ -76,13 +110,6 @@ export const DarkGreenSquare = styled.div`
     width: 8.025rem;
 `
 
-export const SmMintSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
-    grid-column-start: 10;
-    height: 1.5rem;
-    width: 1.5rem;
-`
-
 export const LgMintSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.mint};
     grid-column-start: 13;
@@ -90,18 +117,15 @@ export const LgMintSquare = styled.div`
     width: 8.025rem;
 `
 
+// --- Green BG --- //
+
 export const WhiteLines = styled.div`
     grid-column-start: 7;
 `
 
-export const ThreeSquares = styled.div`
+export const ThreeSquares = styled.svg`
     grid-column-start: 13;
-    position: relative;
-
-    svg {
-        position: absolute;
-        bottom: 0;
-    }
+    grid-column-end: 14;
 `
 
 export const SmWhiteSquare = styled.div`

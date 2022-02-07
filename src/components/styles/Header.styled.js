@@ -2,21 +2,23 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};
+    padding: 0 4.5rem;
 `;
 
 export const StyledNav = styled.nav`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 12.625rem 0 12.625rem;
-    
-    div {
-        display: flex;
-        align-items: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1.5rem;
+    padding: 2rem 0;
+`
 
-    svg {
+export const StyledLogo = styled.div`
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+    svg { // Envy Labs logo
         display: inline-block;
+        vertical-align: middle;
     }
 
     h6 { // Insightful web applications
@@ -24,15 +26,21 @@ export const StyledNav = styled.nav`
         display: inline-block;
         padding-left: 1rem;
         margin: 0;
+        vertical-align: middle;
     }
+`
 
-    a { // nav links
+export const StyledLinks = styled.div`
+    grid-column-start: 11;
+    grid-column-end: 16;
+
+    a {
         font-family: "Space Grotesk";
         font-weight: normal;
         font-size: 0.875em;
         color: white;
         text-decoration: none;
-        margin: 1em;
+        margin: 1rem;
 
         &:visited {
             text-decoration: none;
@@ -45,7 +53,7 @@ export const HeaderGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    padding: 13.5rem 0 28rem 0;
+    padding: 11.5rem 0 28rem 0;
 
     h5 { // CASE STUDY
         color: ${({ theme }) => theme.colors.slategray};
@@ -55,10 +63,11 @@ export const HeaderGrid = styled.div`
         margin: 0;
     }
 
-    svg { // line/border; to be done in CSS
+    div { // line
+        border-bottom: 1px solid ${({ theme }) => theme.colors.silver};
         grid-column-start: 5;
         grid-column-end: 15;
-        margin: auto;
+        margin-bottom: 1rem;
     }
 
     p { // Moonllight
@@ -70,18 +79,17 @@ export const HeaderGrid = styled.div`
         grid-column-end: 11;
         padding: 4.5rem 0 3.125rem 0;
         margin: 0;
+
+        @media (max-width: 1040px) {
+            font-size: 5em;
+        }
     }
 
-    div {  // p text div
+    h4 { // rest of text
+        color: ${({ theme }) => theme.colors.palemint};
+        font-weight: normal;
         grid-column-start: 5;
         grid-column-end: 13;
-    }
-
-    div > p { // rest of text
-        font-family: "IBM Plex Serif";
-        font-weight: normal;
-        font-size: 1.875em;
-        color: ${({ theme }) => theme.colors.palemint};
         line-height: 1.5em;
         padding: 0;
     }

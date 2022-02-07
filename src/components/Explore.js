@@ -1,15 +1,15 @@
-import { CardFlex, StyledCard, StyledExplore, StyledNotesForm, StyledNumber, StyledTitle } from "./styles/Explore.styled";
+import { CardGrid, ProductDiscoveryCard, DevelopmentCard, StyledExplore, StyledNotesForm, StyledNumber, StyledTitle } from "./styles/Explore.styled";
 import stickynotes from "../assets/stickynotes.jpg";
 import developing from "../assets/developing.jpg";
 
 export default function Explore() {
     return (
         <StyledExplore>
-            <StyledTitle>
-                <h5>EXPLORE OUR OTHER SERVICES</h5>
-            </StyledTitle>
-            <CardFlex>
-                <StyledCard>
+            <CardGrid>
+                <StyledTitle>
+                    <h5>EXPLORE OUR OTHER SERVICES</h5>
+                </StyledTitle>
+                <ProductDiscoveryCard>
                     <img src={stickynotes} alt="brainstorming with sticky notes" />
                     <div>
                         <StyledNumber>
@@ -18,8 +18,8 @@ export default function Explore() {
                         <h3>Product Discovery</h3>
                     </div>
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
-                </StyledCard>
-                <StyledCard>
+                </ProductDiscoveryCard>
+                <DevelopmentCard>
                     <img src={developing} alt="developer working at a computer" />
                     <div>
                         <StyledNumber>
@@ -28,8 +28,8 @@ export default function Explore() {
                         <h3>Development</h3>
                     </div>    
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
-                </StyledCard>
-            </CardFlex>
+                </DevelopmentCard>
+            </CardGrid>
             <StyledNotesForm>
                 <h1>Let's Compare Notes</h1>
                 <p>We're always looking for a chance to talk shop. Even if we're not the right fit today, we'll be your go-to resource whenever new questions pop up.</p>

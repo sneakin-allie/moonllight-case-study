@@ -11,18 +11,32 @@ export const StyledPara = styled.div`
     grid-column-start: 1;
     grid-column-end: 11;
 
+    @media (max-width: 1040px) {
+        grid-column-start: 1;
+        grid-column-end: 16;
+    }
+
     h2 {
         color: ${({ theme }) => theme.colors.darkgreen};
         margin: 0;
         border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
         padding: 0 0 13.5rem 19.5rem;
         line-height: 4.25rem;
+
+        @media (max-width: 1040px) {
+            padding: 0 0 13.5rem 7rem;
+        }
     }
 `
 
 export const StyledList = styled.div`
     grid-column-start: 12;
     grid-column-end: 16;
+
+    @media (max-width: 1040px) {
+        grid-column-start: 4;
+        grid-column-end: 15;
+    }
 
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};

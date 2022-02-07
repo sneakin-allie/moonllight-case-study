@@ -17,6 +17,12 @@ const theme = {
         ibmPlexSerif: "IBM Plex Serif",
         spaceGrotesk: "Space Grotesk",
     },
+    breakpoints: {
+        mobile: "480px",
+        tablet: "768px",
+        laptop: "1024px",
+        desktop: "1200px",
+    }
 };
 
 export default theme;

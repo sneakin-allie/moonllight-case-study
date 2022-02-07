@@ -5,23 +5,56 @@ export const StyledExplore = styled.section`
 `
 
 export const StyledTitle = styled.div`
-    h5 { // EXPLORE OUR OTHER SERVICES
+    grid-column-start: 3;
+    grid-column-end: 15;
+
+    h5 { 
         color: ${({ theme }) => theme.colors.silver};
         letter-spacing: 0.25em;
-        padding: 9rem 0 0 22.5rem;
-        margin: 0;
+        padding: 0;
+        margin: 9rem 0 2rem 2rem;
     }
 `
 
-// --- Card ---//
+// --- Cards ---//
 
-export const CardFlex = styled.div`
-    display: flex;
-    margin: 0.5rem 18.75rem 9rem 18.75rem;
+export const CardGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1.5rem;
 `
 
-export const StyledCard = styled.div`
-    margin: 4rem;
+export const ProductDiscoveryCard = styled.div`
+    grid-column-start: 3;
+    grid-column-end: 9;
+    margin: 2rem;
+    
+    div {
+        margin: 3rem 0 2rem 0;
+    }
+
+    h3 {
+        color: white;
+        display: inline-block;
+        margin: 0 0 0 1.5rem;
+    }
+
+    p {
+        border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
+        color: ${({ theme }) => theme.colors.silver};
+        font-family: "IBM Plex Serif";
+        font-size: 1.5em;
+        font-weight: normal;
+        line-height: 2.5rem;
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+`
+
+export const DevelopmentCard = styled.div`
+    grid-column-start: 9;
+    grid-column-end: 15;
+    margin: 2rem;
     
     div {
         margin: 3rem 0 2rem 0;
@@ -58,11 +91,17 @@ export const StyledNumber = styled.div`
     width: 4.5rem;  
 `
 
+// --- Form --- //
+
 export const StyledNotesForm = styled.div`
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 12rem;
+    padding: 12rem 0;
     width: 33%;
+
+    @media (max-width: 1040px) {
+        width: 50%;
+    }
 
     h1 { // Let's Compare Notes
         color: white;
