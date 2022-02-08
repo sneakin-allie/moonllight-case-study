@@ -6,15 +6,21 @@ export const StyledHeader = styled.section`
 `;
 
 export const StyledNav = styled.nav`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    
+    @media (max-width: 1040px) {
+        flex-direction: column;
+    }
 `
 
 export const StyledLogo = styled.div`
-    grid-column-start: 2;
-    grid-column-end: 8;
+    margin-left: 7rem;
+
+    @media (max-width: 1280px) {
+        margin-left: 0;
+    }
 
     svg { // Envy Labs logo
         display: inline-block;
@@ -27,12 +33,65 @@ export const StyledLogo = styled.div`
         padding-left: 1rem;
         margin: 0;
         vertical-align: middle;
+
+        @media (max-width: 1040px) {
+            display: none;
+        }
     }
 `
 
 export const StyledLinks = styled.div`
-    grid-column-start: 11;
-    grid-column-end: 16;
+    display: flex;  
+    margin-right: 7rem;
+    padding-top: 0.5rem;
+
+    @media (max-width: 1280px) {
+        margin-right: 0;
+    }
+
+    @media (max-width: 1040px) {
+        padding-top: 1rem;
+    }
+
+    @media (max-width: 560px) {
+        flex-direction: column;
+    }
+
+    a:nth-child(2) {
+        padding: 0 1rem 0 2rem;
+
+        @media (max-width: 1040px) {
+            padding: 0 0.5rem 0 1rem;
+        }
+
+        @media (max-width: 560px) {
+            padding: 0.5rem 0 0 0;
+        }
+    }
+
+    a:nth-child(3) {
+        padding: 0 1rem;
+
+        @media (max-width: 1040px) {
+            padding: 0 0.5rem;
+        }
+
+        @media (max-width: 560px) {
+            padding: 0.5rem 0;
+        }
+    }
+
+    a:nth-child(4) {
+        padding: 0 2rem 0 1rem;
+
+        @media (max-width: 1040px) {
+            padding: 0 1rem 0 0.5rem;
+        }
+
+        @media (max-width: 560px) {
+            padding: 0 0 0.5rem 0;
+        }
+    }
 
     a {
         font-family: "Space Grotesk";
@@ -40,11 +99,14 @@ export const StyledLinks = styled.div`
         font-size: 0.875em;
         color: white;
         text-decoration: none;
-        margin: 1rem;
 
         &:visited {
             text-decoration: none;
             color: white;
+        }
+
+        @media (max-width: 1040px) {
+            
         }
     }
 `
