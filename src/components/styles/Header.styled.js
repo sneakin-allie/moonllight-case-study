@@ -104,33 +104,23 @@ export const StyledLinks = styled.div`
             text-decoration: none;
             color: white;
         }
-
-        @media (max-width: 1040px) {
-            
-        }
     }
 `
 
-export const HeaderGrid = styled.div`
+export const ContentGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     padding: 11.5rem 0 28rem 0;
 
     h5 { // CASE STUDY
+        border-bottom: 1px solid ${({ theme }) => theme.colors.silver};
         color: ${({ theme }) => theme.colors.slategray};
         letter-spacing: 0.25em;
         grid-column-start: 3;
-        grid-column-end: 5;
-        margin: 0;
-    }
-
-    div { // line
-        border-bottom: 1px solid ${({ theme }) => theme.colors.silver};
-        grid-column-start: 5;
         grid-column-end: 15;
-        margin-bottom: 1rem;
-    }
+        margin: 0;
+    } // border line needs work
 
     p { // Moonllight
         font-family: "Space Grotesk";
@@ -138,12 +128,24 @@ export const HeaderGrid = styled.div`
         font-size: 10em;
         color: ${({ theme }) => theme.colors.slategray};
         grid-column-start: 3;
-        grid-column-end: 11;
+        grid-column-end: 10;
         padding: 4.5rem 0 3.125rem 0;
         margin: 0;
 
+        @media (max-width: 1280px) {
+            font-size: 9em;
+        }
+
         @media (max-width: 1040px) {
+            font-size: 7em;
+        }
+
+        @media (max-width: 800px) {
             font-size: 5em;
+        }
+
+        @media (max-width: 800px) {
+            font-size: 4em;
         }
     }
 

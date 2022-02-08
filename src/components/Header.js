@@ -1,4 +1,4 @@
-import { StyledHeader, StyledNav, HeaderGrid, StyledLinks, StyledLogo } from "./styles/Header.styled";
+import { StyledHeader, StyledNav, ContentGrid, StyledLinks, StyledLogo } from "./styles/Header.styled";
 
 export default function Header() {
     return (
@@ -18,12 +18,11 @@ export default function Header() {
                     <a href="#">Contact</a>
                 </StyledLinks>
             </StyledNav>
-            <HeaderGrid>
+            <ContentGrid>
                 <h5>CASE STUDY</h5>
-                <div></div>
                 <p>Moonllight</p>
                 <h4>We combined data from four international soccer leagues into one fantasy sports experience.</h4>
-            </HeaderGrid>
+            </ContentGrid>
         </StyledHeader>
     )
 }
