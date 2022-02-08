@@ -11,9 +11,20 @@ export const StyledPara = styled.div`
     grid-column-start: 1;
     grid-column-end: 11;
 
+    @media (max-width: 1620px) {
+        grid-column-end: 10;
+    }
+
+    @media (max-width: 1290px) {
+        grid-column-end: 9;
+    }
+
+    @media (max-width: 1070px) {
+        grid-column-end: 8;
+    }
+
     @media (max-width: 1040px) {
-        grid-column-start: 1;
-        grid-column-end: 16;
+        grid-column-end: 14;
     }
 
     h2 {
@@ -23,8 +34,18 @@ export const StyledPara = styled.div`
         padding: 0 0 13.5rem 19.5rem;
         line-height: 4.25rem;
 
-        @media (max-width: 1040px) {
-            padding: 0 0 13.5rem 7rem;
+        @media (max-width: 1620px) {
+            padding: 0 0 9rem 15rem;
+        }
+
+        @media (max-width: 1290px) {
+            font-size: 2.5em;
+            line-height: 4rem;
+            padding: 0 0 4.5rem 10.5rem;
+        }
+
+        @media (max-width: 1070px) {
+            padding: 0 0 2.25rem 5.25rem;
         }
     }
 `
@@ -33,9 +54,22 @@ export const StyledList = styled.div`
     grid-column-start: 12;
     grid-column-end: 16;
 
+    @media (max-width: 1620px) {
+        grid-column-start: 11;
+    }
+
+    @media (max-width: 1290px) {
+        grid-column-start: 10;
+    }
+
+    @media (max-width: 1070px) {
+        grid-column-start: 9;
+    }
+
     @media (max-width: 1040px) {
         grid-column-start: 4;
-        grid-column-end: 15;
+        grid-column-end: 16;
+        margin-top: 5.25rem;
     }
 
     h3 {
@@ -65,7 +99,6 @@ export const StyledList = styled.div`
             font-family: "Space Grotesk";
             color: ${({ theme }) => theme.colors.darkgreen};
             padding-right: 4.5rem;
-
         }
 
         li:first-child {
