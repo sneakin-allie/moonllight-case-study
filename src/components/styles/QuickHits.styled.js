@@ -5,6 +5,10 @@ export const StyledQuickHits = styled.section`
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     margin-bottom: 13.5rem;
+
+    @media (max-width: 800px) {
+        margin-bottom: 4.5rem;
+    }
 `             
 
 export const StyledPara = styled.div`

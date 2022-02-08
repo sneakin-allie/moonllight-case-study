@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
 export const StyledProjectGoalsImages = styled.section`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1.5rem;
+    padding: 0;
+    margin: 0 4.5rem;
 `
 export const StyledImageOne = styled.div`
-    margin: 9rem 4.188rem 34.25rem 12.625rem; 
+    grid-column-start: 2;
+    grid-column-end: 8; 
 `
 
 export const StyledImageTwo = styled.div`
-    margin: 16rem 5.75rem 13.5rem 4.188rem; 
+    grid-column-start: 9;
+    grid-column-end: 17;
+    margin-top: 7rem;
+    margin-bottom: 13.5rem;
 `
