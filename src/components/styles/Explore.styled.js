@@ -99,13 +99,29 @@ export const StyledNotesForm = styled.div`
     padding: 12rem 0;
     width: 33%;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 1280px) {
         width: 50%;
+    }
+
+    @media (max-width: 800px) {
+        width: 66%;
     }
 
     h1 { // Let's Compare Notes
         color: white;
         margin: 0;
+
+        @media (max-width: 1280px) {
+            font-size: 3.2rem;
+        }
+
+        @media (max-width: 1040px) {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 800px) {
+            font-size: 2.3rem;
+        }
     }
 
     p {
