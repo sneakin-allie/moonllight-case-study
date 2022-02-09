@@ -1,6 +1,17 @@
 import styled from "styled-components";
 
 export const StyledTestimonial = styled.section`
+
+`
+
+export const WhiteBGGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1.5rem;
+    padding: 0 4.5rem;
+`
+
+export const GreenBGGrid = styled.div`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -14,21 +25,6 @@ export const Quotation = styled.svg`
     background-color: ${({ theme }) => theme.colors.mint};
     padding: 2.875rem 2.5rem;
     width: 3rem;
-
-    @media (max-width: 1280px) {
-        padding: 2.625rem 2.25rem;
-        width: 2.75rem;
-    }
-
-    @media (max-width: 1040px) {
-        padding: 2.375rem 2rem;
-        width: 2.5rem;
-    }
-
-    @media (max-width: 800px) {
-        padding: 2.125rem 1.75rem;
-        width: 2.25rem;
-    }
 `
 
 export const StyledQuote = styled.div`
@@ -39,44 +35,63 @@ export const StyledQuote = styled.div`
 
     @media (max-width: 1280px) {
         grid-column-start: 3;
+        grid-column-end: 15;
+        padding-left: 4.5rem;
     }
 
     @media (max-width: 1040px) {
         grid-column-start: 2;
+        grid-column-end: 16;
+        padding-left: 4rem;
     }
 
     @media (max-width: 800px) {
-        grid-column-start: 1;
+        grid-column-start: 2;
+        padding-left: 3.5rem;
     }
 
     h2 { // "Our partnership..."
         color: white;
         line-height: 4.25rem;
         margin: 0;
+        padding-top: 4.5rem;
 
+        /*
         @media (max-width: 1280px) {
-            line-height: 4rem;
+            font-size: 2.75em;
         }
 
         @media (max-width: 1040px) {
-            line-height: 3.75rem;
+            font-size: 2.25em;
+            line-height: 4rem;
         }
 
         @media (max-width: 800px) {
+            font-size: 2,25em;
             line-height: 3.5rem;
         }
+        */
     }
 `
 
 export const StyledClient = styled.div`
     border-left: 8px solid white;
     grid-column-start: 4;
-    grid-column-end: 14;
+    grid-column-end: 16;
     padding-left: 5rem;
 
+    @media (max-width: 1280px) {
+        grid-column-start: 3;
+        padding-left: 4.5rem;
+    }
+
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+        padding-left: 4rem;
+    }
+
     @media (max-width: 800px) {
-        grid-column-start: 1;
-        grid-column-end: 15;
+        padding-left: 3.5rem;
     }
 
     h5 { // Jason & Founder
@@ -93,34 +108,38 @@ export const StyledClient = styled.div`
 export const SmMintSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.mint};
     grid-column-start: 10;
+    grid-column-end: 11;
     height: 1.5rem;
     width: 1.5rem;
 `
 
-export const GrayLines = styled.div`
-    bottom: 0;
-    grid-column-start: 4;
+export const GrayLines = styled.svg`
+    grid-column-start: 3;
+    grid-column-end: 5;
     opacity: .25;
 `
 
 export const DarkGreenSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     grid-column-start: 9;
-    height: 8.025rem;
-    width: 8.025rem;
+    grid-column-end: 10;
+    height: 6.67vw;
+    width: 6.67vw;
 `
 
 export const LgMintSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.mint};
-    grid-column-start: 13;
-    height: 8.025rem;
-    width: 8.025rem;
+    grid-column-start: 12;
+    grid-column-end: 14;
+    height: 6.67vw;
+    width: 6.67vw;
 `
 
 // --- Green BG --- //
 
-export const WhiteLines = styled.div`
+export const WhiteLines = styled.svg`
     grid-column-start: 7;
+    grid-column-end: 9;
 `
 
 export const ThreeSquares = styled.svg`
@@ -130,47 +149,51 @@ export const ThreeSquares = styled.svg`
 
 export const SmWhiteSquare = styled.div`
     background-color: white;
+    grid-column-start: 12;
+    grid-column-end: 13;
     height: 1.125em;
-    margin-left: 54.5rem;
     width: 1.125rem;
 `
 
-export const OmbreSquares = styled.div`
-    margin: 1rem 0 -4.5rem 19rem;
+export const OmbreSquares = styled.svg`
+    grid-column-start: 7;
+    grid-column-end: 9;
 `
 
 export const LgPaleMintSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.mint};
-    height: 8rem;
-    margin: 2.5rem 0 -3.5rem 56rem;
-    opacity: .05;
-    width: 8rem;
-`
-
-export const FiveSquares = styled.div`
-    grid-column-start: 9;
-    margin: -2.5rem 0 0 0;
-`
-
-export const WindowPanes = styled.div`
     grid-column-start: 13;
-    margin: -3rem 0 0 0;
+    grid-column-end: 15;
+    height: 6.67vw;
+    opacity: .05;
+    width: 6.67vw;
+`
+
+export const FiveSquares = styled.svg`
+    grid-column-start: 9;
+    grid-column-end: 10;
+`
+
+export const WindowPanes = styled.svg`
+    grid-column-start: 13;
+    grid-column-end: 14;
 `
 
 export const SmGreenSquare = styled.div`
     background-color: ${({ theme }) => theme.colors.limegreen};
     grid-column-start: 10;
+    grid-column-end: 11;
     height: 1.5rem;
-    margin: 2.5rem 0 1.5rem 0;
     opacity: .5;
     width: 1.5rem;
 `
 
-export const X = styled.div`
+export const X = styled.svg`
     grid-column-start: 6;
-    margin: 3.5rem 0 0 0;
+    grid-column-end: 7;
 `
 
-export const WhiteSquaresX = styled.div`
-    grid-column-start: 13;
+export const WhiteSquaresX = styled.svg`
+    grid-column-start: 12;
+    grid-column-end: 14;
 `

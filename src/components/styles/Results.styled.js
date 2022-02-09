@@ -8,15 +8,24 @@ export const StyledResults = styled.section`
 
     h1 {
         grid-column-start: 6;
-        grid-column-end: 10;
+        grid-column-end: 15;
         margin: 0 0 2.625rem 0;
+
+        @media (max-width: 800px) {
+            font-size: 3.25em;
+        }
     }
 
     h2 {
         grid-column-start: 6;
-        grid-column-end: 14;
+        grid-column-end: 15;
         line-height: 4.25rem;
         margin: 0;
+
+        @media (max-width: 800px) {
+            font-size: 2em;
+            line-height: 4rem;
+        }
     }
 
     div {
