@@ -4,16 +4,26 @@ export default function Testimonial() {
     return (
         <StyledTestimonial>
             <WhiteBGGrid>
-                <SmMintSquare />
-                <GrayLines width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="128" width="128" height="15.7538" transform="rotate(-90 0 128)" fill="#052324"/>
-                    <rect x="28.0005" y="128" width="128" height="15.7538" transform="rotate(-90 28.0005 128)" fill="#052324"/>
-                    <rect x="55.9998" y="128" width="128" height="15.7538" transform="rotate(-90 55.9998 128)" fill="#052324"/>
-                    <rect x="112" y="128" width="128" height="15.7538" transform="rotate(-90 112 128)" fill="#052324"/>
-                    <rect x="84" y="128" width="128" height="15.7538" transform="rotate(-90 84 128)" fill="#052324"/>
+                <SmMintSquare>
+                    <div></div>
+                </SmMintSquare>
+            </WhiteBGGrid>
+            <WhiteBGGrid>
+                <GrayLines>
+                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="128" width="128" height="15.7538" transform="rotate(-90 0 128)" fill="#052324"/>
+                        <rect x="28.0005" y="128" width="128" height="15.7538" transform="rotate(-90 28.0005 128)" fill="#052324"/>
+                        <rect x="55.9998" y="128" width="128" height="15.7538" transform="rotate(-90 55.9998 128)" fill="#052324"/>
+                        <rect x="112" y="128" width="128" height="15.7538" transform="rotate(-90 112 128)" fill="#052324"/>
+                        <rect x="84" y="128" width="128" height="15.7538" transform="rotate(-90 84 128)" fill="#052324"/>
+                    </svg>
                 </GrayLines>
-                <DarkGreenSquare />
-                <LgMintSquare />
+                <DarkGreenSquare>
+                    <div></div>                    
+                </DarkGreenSquare>
+                <LgMintSquare>
+                    <div></div>
+                </LgMintSquare>
             </WhiteBGGrid>
             <GreenBGGrid>
                 <WhiteLines width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">

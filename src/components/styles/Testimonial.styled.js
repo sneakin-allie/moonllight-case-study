@@ -9,6 +9,7 @@ export const WhiteBGGrid = styled.div`
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     padding: 0 4.5rem;
+    position: relative;
 `
 
 export const GreenBGGrid = styled.div`
@@ -106,33 +107,57 @@ export const StyledClient = styled.div`
 // --- White BG --- //
 
 export const SmMintSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
     grid-column-start: 10;
-    grid-column-end: 11;
-    height: 1.5rem;
-    width: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 6.67vw;
+
+    div {
+        background-color: ${({ theme }) => theme.colors.mint};
+        height: 1.25vw;
+        width: 1.25vw;
+    }
 `
 
-export const GrayLines = styled.svg`
+export const GrayLines = styled.div`
     grid-column-start: 3;
     grid-column-end: 5;
-    opacity: .25;
+    position: relative;
+
+    svg {
+        bottom: 0;
+        height: 6.67vw;
+        opacity: .25; 
+        position: absolute;
+        width: 6.67vw;
+    }
 `
 
 export const DarkGreenSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.darkgreen};
     grid-column-start: 9;
-    grid-column-end: 10;
-    height: 6.67vw;
-    width: 6.67vw;
+    grid-column-end: 10; 
+    position: relative;
+
+    div {
+        background-color: ${({ theme }) => theme.colors.darkgreen};
+        bottom: 0;
+        height: 6.67vw;
+        position: absolute;
+        width: 6.67vw;  
+    }
 `
 
 export const LgMintSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
     grid-column-start: 12;
     grid-column-end: 14;
-    height: 6.67vw;
-    width: 6.67vw;
+    position: relative;
+
+    div {
+        background-color: ${({ theme }) => theme.colors.mint};
+        bottom: 0;
+        height: 6.67vw;
+        position: absolute;
+        width: 6.67vw;
+    }
 `
 
 // --- Green BG --- //
