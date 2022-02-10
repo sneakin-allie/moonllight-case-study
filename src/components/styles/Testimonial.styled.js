@@ -24,8 +24,8 @@ export const GreenBGGrid = styled.div`
 
 export const Quotation = styled.svg`
     background-color: ${({ theme }) => theme.colors.mint};
-    padding: 2.875rem 2.5rem;
-    width: 3rem;
+    padding: 2.4vw 2.1vw;
+    width: 2.5vw;
 `
 
 export const StyledQuote = styled.div`
@@ -162,63 +162,128 @@ export const LgMintSquare = styled.div`
 
 // --- Green BG --- //
 
-export const WhiteLines = styled.svg`
+export const WhiteLines = styled.div`
     grid-column-start: 7;
     grid-column-end: 9;
+
+    svg {
+        height: 6.67vw;
+        width: 6.67vw;
+    }
 `
 
-export const ThreeSquares = styled.svg`
+export const ThreeSquares = styled.div`
     grid-column-start: 13;
     grid-column-end: 14;
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        width: 1.67vw;
+    }
 `
 
-export const SmWhiteSquare = styled.div`
-    background-color: white;
+export const SmSquareShadow = styled.div`
     grid-column-start: 12;
     grid-column-end: 13;
-    height: 1.125em;
-    width: 1.125rem;
+    position: relative;
+
+    svg {
+        height: 1vw;
+        margin-top: 6.3vw;
+        position: absolute;
+        right: 0;
+        width: 1vw;
+    }
 `
 
-export const OmbreSquares = styled.svg`
+export const OmbreSquares = styled.div`
     grid-column-start: 7;
     grid-column-end: 9;
+    position: relative;
+
+    svg {
+        margin-top: 8.28vw;
+        position: absolute;
+        left: 25%;
+        width: 6.67vw;
+    }
 `
 
 export const LgPaleMintSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
     grid-column-start: 13;
     grid-column-end: 15;
-    height: 6.67vw;
-    opacity: .05;
-    width: 6.67vw;
+    position: relative;
+
+    div {
+        background-color: ${({ theme }) => theme.colors.mint};
+        height: 6.67vw;
+        margin-top: 7.4vw;
+        opacity: .05;
+        position: absolute;
+        width: 6.67vw;
+    }
 `
 
-export const FiveSquares = styled.svg`
+export const FiveSquares = styled.div`
     grid-column-start: 9;
     grid-column-end: 10;
+    position: relative;
+
+    svg {
+        height: 2.5vw;
+        margin-top: -2.25vw;
+        position: absolute;
+        width: 2.5vw;
+    }
 `
 
-export const WindowPanes = styled.svg`
+export const WindowPanes = styled.div`
     grid-column-start: 13;
     grid-column-end: 14;
+    position: relative;
+
+    svg {
+        height: 3.75vw;
+        margin-top: -3vw;
+        position: absolute;
+        width: 3.75vw;
+    }
 `
 
 export const SmGreenSquare = styled.div`
-    background-color: ${({ theme }) => theme.colors.limegreen};
     grid-column-start: 10;
     grid-column-end: 11;
-    height: 1.5rem;
-    opacity: .5;
-    width: 1.5rem;
+
+    div {
+        background-color: ${({ theme }) => theme.colors.limegreen};
+        height: 1.25vw;
+        opacity: .5;
+        width: 1.25vw;
+    }
 `
 
-export const X = styled.svg`
+export const X = styled.div`
     grid-column-start: 6;
     grid-column-end: 7;
+    position: relative;
+
+    svg {
+        height: 1.25vw;
+        position: absolute;
+        top: 50%;
+        width: 1.25vw;
+    }
 `
 
-export const WhiteSquaresX = styled.svg`
+export const WhiteSquaresX = styled.div`
     grid-column-start: 12;
     grid-column-end: 14;
+
+    svg {
+        height: 6.67vw;
+        margin-left: 4.5vw;
+        width: 6.67vw;
+    }
 `
