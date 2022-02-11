@@ -13,7 +13,7 @@ export default function Develop() {
                 <h3>Here and Now</h3>
                 <p>Competition waits for no one stats crunching. As real-world games played out, numbers across applications updated in tandem.</p>
                 <h3>Stripe Subscriptions</h3>
-                <p >Making use of Stripe's subscription functionality, the fledgling business had customers from launch. Free trials and referall bonuses helped in encouraging new users.</p>
+                <p>Making use of Stripe's subscription functionality, the fledgling business had customers from launch. Free trials and referall bonuses helped in encouraging new users.</p>
             </StyledContent>        
         </StyledSteps>
     )

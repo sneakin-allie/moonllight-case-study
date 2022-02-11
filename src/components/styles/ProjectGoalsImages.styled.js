@@ -16,5 +16,4 @@ export const StyledImageTwo = styled.div`
     grid-column-start: 9;
     grid-column-end: 17;
     margin-top: 7rem;
-    margin-bottom: 13.5rem;
 `

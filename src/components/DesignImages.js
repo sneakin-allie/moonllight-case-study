@@ -1,16 +1,16 @@
 import typography from "../assets/typography.jpg";
 import pages from "../assets/pages.jpg";
-import { StyledDesignImages } from "./styles/DesignImages.styled";
+import { StyledDesignImages, StyledTypographyImg, StyledWireframeImg } from "./styles/DesignImages.styled";
 
 export default function DesignImages() {
     return (
         <StyledDesignImages>
-            <div>
+            <StyledTypographyImg>
                 <img src={typography} alt="design system with typography, colors, and icons" />
-            </div>
-            <div>
+            </StyledTypographyImg>
+            <StyledWireframeImg>
                 <img src={pages} alt="pages views" />
-            </div>
+            </StyledWireframeImg>
         </StyledDesignImages>
     )
 }

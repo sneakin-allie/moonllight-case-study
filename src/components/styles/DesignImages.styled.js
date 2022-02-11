@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 export const StyledDesignImages = styled.section`
-    margin-bottom: 13.5rem;
     
-    div {
-        margin: 2.25rem 12.625rem;
-    }
+`
 
-    img {
-        width:100%;
-    }
+export const StyledTypographyImg = styled.div`
+    margin: auto;
+    margin-bottom: 4.5rem;
+    width: 80vw;
+`
+
+export const StyledWireframeImg = styled.div`
+    margin: auto;
+    width: 80vw;
 `

@@ -4,10 +4,16 @@ export const StyledResults = styled.section`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    margin-bottom: 9rem;
+    margin: 13.5rem 0 18rem 0;
 
     @media (max-width: 1280px) {
         grid-column-gap: 0;
+        margin: 9rem 0 18rem 0;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-gap: 0;
+        margin: 4.5rem 0 9rem 0;
     }
 
     h1 {
@@ -51,7 +57,8 @@ export const StyledResults = styled.section`
         }
 
         @media (max-width: 560px) {
-            font-size: 2.5em;
+            font-size: 2.25em;
+            line-height: 4rem;
         }
     }
 
@@ -60,7 +67,6 @@ export const StyledResults = styled.section`
         border-color: ${({ theme }) => theme.colors.silver};
         grid-column-start: 6;
         grid-column-end: 17;
-        margin-bottom: 9rem;
         padding-bottom: 13.5rem;
 
         @media (max-width: 1280px) {
@@ -70,7 +76,9 @@ export const StyledResults = styled.section`
 
         @media (max-width: 1040px) {
             grid-column-start: 4;
-            margin-bottom: 4.5rem;
+        }
+
+        @media (max-width: 560px) {
             padding-bottom: 4.5rem;
         }
     }
