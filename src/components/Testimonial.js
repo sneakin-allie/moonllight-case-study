@@ -1,4 +1,4 @@
-import { StyledTestimonial, StyledQuote, StyledClient, ThreeSquares, WhiteLines, WhiteSquaresX, X, DarkGreenSquare, LgMintSquare, GrayLines, SmMintSquare, OmbreSquares, Quotation, SmGreenSquare, FiveSquares, WindowPanes, LgPaleMintSquare, WhiteBGGrid, GreenBGGrid, SmSquareShadow } from "./styles/Testimonial.styled";
+import { StyledTestimonial, StyledQuote, StyledClient, ThreeSquares, WhiteLines, WhiteSquaresX, X, DarkGreenSquare, LgMintSquare, GrayLines, OmbreSquares, Quotation, SmGreenSquare, FiveSquares, WindowPanes, LgPaleMintSquare, WhiteBGGrid, GreenBGGrid, SmSquareShadow } from "./styles/Testimonial.styled";
 
 export default function Testimonial() {
     return (

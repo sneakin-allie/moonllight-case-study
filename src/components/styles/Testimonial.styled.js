@@ -18,6 +18,10 @@ export const GreenBGGrid = styled.div`
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     padding: 0 4.5rem;
+
+    @media (max-width: 560px) {
+        padding: 0 3rem;
+    }
 `
 
 // --- Content --- //
@@ -47,8 +51,12 @@ export const StyledQuote = styled.div`
     }
 
     @media (max-width: 800px) {
-        grid-column-start: 2;
+        grid-column-start: 1;
         padding-left: 3.5rem;
+    }
+
+    @media (max-width: 560px) {
+        padding-left: 3rem;
     }
 
     h2 { // "Our partnership..."
@@ -57,21 +65,15 @@ export const StyledQuote = styled.div`
         margin: 0;
         padding-top: 4.5rem;
 
-        /*
-        @media (max-width: 1280px) {
-            font-size: 2.75em;
-        }
-
-        @media (max-width: 1040px) {
-            font-size: 2.25em;
-            line-height: 4rem;
-        }
-
         @media (max-width: 800px) {
-            font-size: 2,25em;
-            line-height: 3.5rem;
+            font-size: 2.5em;
+            line-height: 3.75rem;
         }
-        */
+
+        @media (max-width: 560px) {
+            font-size: 1.5em;
+            line-height: 2.75rem;
+        }
     }
 `
 
@@ -79,6 +81,7 @@ export const StyledClient = styled.div`
     border-left: 8px solid white;
     grid-column-start: 4;
     grid-column-end: 16;
+    margin-top: 2.5rem;
     padding-left: 5rem;
 
     @media (max-width: 1280px) {
@@ -92,31 +95,33 @@ export const StyledClient = styled.div`
     }
 
     @media (max-width: 800px) {
+        margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+        grid-column-start: 1;
         padding-left: 3.5rem;
+    }
+
+    @media (max-width: 560px) {
+        padding-left: 3rem;
     }
 
     h5 { // Jason & Founder
         color: ${({ theme }) => theme.colors.slategray};
         letter-spacing: 0.25em;
         margin: 0;
+
+        @media (max-width: 800px) {
+            font-size: 1.25em;
+            line-height: 1.5em;
+        }
     }
 `
 
 // --- Motifs --- //
 
 // --- White BG --- //
-
-export const SmMintSquare = styled.div`
-    grid-column-start: 10;
-    margin-left: 1rem;
-    margin-bottom: 6.67vw;
-
-    div {
-        background-color: ${({ theme }) => theme.colors.mint};
-        height: 1.25vw;
-        width: 1.25vw;
-    }
-`
 
 export const GrayLines = styled.div`
     grid-column-start: 3;
