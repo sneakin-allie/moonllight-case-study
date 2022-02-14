@@ -2,17 +2,13 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};
-    padding: 0 4.5rem;
+    padding: 0 4.5rem; 
 `;
 
 export const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
-    
-    @media (max-width: 1040px) {
-        flex-direction: column;
-    }
 `
 
 export const StyledLogo = styled.div`
@@ -50,10 +46,6 @@ export const StyledLinks = styled.div`
     }
 
     @media (max-width: 1040px) {
-        padding-top: 1rem;
-    }
-
-    @media (max-width: 560px) {
         flex-direction: column;
     }
 
@@ -61,11 +53,7 @@ export const StyledLinks = styled.div`
         padding: 0 1rem 0 2rem;
 
         @media (max-width: 1040px) {
-            padding: 0 0.5rem 0 1rem;
-        }
-
-        @media (max-width: 560px) {
-            padding: 0.5rem 0 0 0;
+            padding: 1rem 0 0 0;
         }
     }
 
@@ -73,11 +61,7 @@ export const StyledLinks = styled.div`
         padding: 0 1rem;
 
         @media (max-width: 1040px) {
-            padding: 0 0.5rem;
-        }
-
-        @media (max-width: 560px) {
-            padding: 0.5rem 0;
+            padding: 1rem 0;
         }
     }
 
@@ -85,11 +69,7 @@ export const StyledLinks = styled.div`
         padding: 0 2rem 0 1rem;
 
         @media (max-width: 1040px) {
-            padding: 0 1rem 0 0.5rem;
-        }
-
-        @media (max-width: 560px) {
-            padding: 0 0 0.5rem 0;
+            padding: 0 0 1rem 0;
         }
     }
 
@@ -113,11 +93,6 @@ export const ContentGrid = styled.div`
     grid-column-gap: 1.5rem;
     padding: 11.5rem 0 28rem 0;
 
-    @media (max-width: 1040px) {
-        grid-column-gap: 0;
-        padding: 9.5rem 0 28rem 0;
-    }
-
     h5 { // CASE STUDY
         border-bottom: 1px solid ${({ theme }) => theme.colors.silver};
         color: ${({ theme }) => theme.colors.slategray};
@@ -128,11 +103,12 @@ export const ContentGrid = styled.div`
 
         @media (max-width: 1040px) {
             grid-column-start: 2;
+            grid-column-end: 16;
         }
 
         @media (max-width: 560px) {
             grid-column-start: 1;
-            grid-column-end: 16;
+            grid-column-end: 17;
         }
 
     } // border line needs work
@@ -171,13 +147,12 @@ export const ContentGrid = styled.div`
         padding: 0;
 
         @media (max-width: 1040px) {
-            grid-column-start: 4;
-            grid-column-end: 15;
+            grid-column-start: 2;
+            grid-column-end: 16;
         }
 
         @media (max-width: 560px) {
             grid-column-start: 3;
-            grid-column-end: 16;
             font-size: 1.75em;
         }
     }

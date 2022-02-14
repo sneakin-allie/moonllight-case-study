@@ -5,19 +5,7 @@ export const StyledPremise = styled.section`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    margin-top: 9rem;
-
-    @media (max-width: 1040px) {
-        margin-top: 4.5rem;
-    }
-
-    @media (max-width: 800px) {
-        margin-top: 9rem;
-    }
-
-    @media (max-width: 560px) {
-        margin-top: 13.5rem;
-    }
+    margin: 9rem 4.5rem 0 4.5rem;
 `
 
 export const StyledTitle = styled.div`
@@ -29,15 +17,16 @@ export const StyledTitle = styled.div`
     grid-column-end: 13;
     margin-bottom: 1.125rem;
 
+    @media (max-width: 1040px) {
+        grid-column-start: 1;
+        grid-column-end: 16;
+    }
+
     p {
         margin: 0;
 
         @media (max-width: 1040px) {
-            font-size: 4rem;
-        }
-
-        @media (max-width: 800px) {
-            font-size: 3rem;
+            font-size: 3.75rem;
         }
     }
 `
@@ -51,11 +40,8 @@ export const StyledBody = styled.div`
     grid-column-start: 4;
     grid-column-end: 13;
 
-    @media (max-width: 1280px) {
-        grid-column-end: 14;
-    }
-
     @media (max-width: 1040px) {
-        grid-column-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 17;
     }
 `

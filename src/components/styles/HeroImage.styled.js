@@ -6,10 +6,7 @@ export const StyledHeroImage = styled.div`
     width: 80vw;    
 
     @media (max-width: 1040px) {
-        margin-top: -20.75rem;
-    }
-
-    @media (max-width: 800px) {
-        margin-top: -22.75rem;
+        margin: 0;
+        width: 100vw;
     }
 `

@@ -32,16 +32,17 @@ export const StyledPara = styled.div`
         line-height: 4.25rem;
 
         @media (max-width: 1600px) {
-            padding: 0 0 9rem 15rem;
+            // padding: 0 0 9rem 15rem;
         }
 
         @media (max-width: 1280px) {
-            font-size: 2.75em;
-            padding: 0 0 4.5rem 10.5rem;
+            // font-size: 2.75em;
+            // padding: 0 0 4.5rem 10.5rem;
         }
 
         @media (max-width: 1040px) {
             font-size: 2.5em;
+            padding: 0 0 4.5rem 10.5rem; 
         }
 
         @media (max-width: 800px) {
@@ -61,17 +62,9 @@ export const StyledList = styled.div`
     }
 
     @media (max-width: 1040px) {
-        grid-column-start: 5;
-        grid-column-end: 13;
-        margin-top: 4.5rem;
-    }
-
-    @media (max-width: 800px) {
+        grid-column-start: 1;
         grid-column-end: 16;
-    }
-
-    @media (max-width: 560px) {
-        grid-column-start: 4;
+        margin: 4.5rem;
     }
 
     h3 {
@@ -102,9 +95,11 @@ export const StyledList = styled.div`
             color: ${({ theme }) => theme.colors.darkgreen};
             padding-right: 4.5rem;
 
+            /*
             @media (max-width: 1280px) {
                 padding-right: 3.5rem;
             }
+            */
         }
 
         li:first-child {
@@ -117,9 +112,11 @@ export const StyledList = styled.div`
             font-size: 1.5em;
             padding-left: 6.8rem;
 
+            /*
             @media (max-width: 1280px) {
                 padding-left: 5.8rem;
             }
+            */
         }
     }
 `
