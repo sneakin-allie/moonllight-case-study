@@ -6,29 +6,22 @@ export const StyledQuickHits = styled.section`
     grid-column-gap: 1.5rem;
     margin-bottom: 13.5rem;
 
-    @media (max-width: 800px) {
-        margin-bottom: 4.5rem;
-    }
+    @media (max-width: 1040px) {
+        margin-bottom: 0rem;
+    }    
 `             
 
 export const StyledPara = styled.div`
     grid-column-start: 1;
     grid-column-end: 11;
 
-    @media (max-width: 1620px) {
+    @media (max-width: 1280px) {
         grid-column-end: 10;
     }
 
-    @media (max-width: 1290px) {
-        grid-column-end: 9;
-    }
-
-    @media (max-width: 1070px) {
-        grid-column-end: 8;
-    }
-
     @media (max-width: 1040px) {
-        grid-column-end: 14;
+        grid-column-start: 1;
+        grid-column-end: 15;
     }
 
     h2 {
@@ -38,42 +31,47 @@ export const StyledPara = styled.div`
         padding: 0 0 13.5rem 19.5rem;
         line-height: 4.25rem;
 
-        @media (max-width: 1620px) {
+        @media (max-width: 1600px) {
             padding: 0 0 9rem 15rem;
         }
 
-        @media (max-width: 1290px) {
-            font-size: 2.5em;
-            line-height: 4rem;
+        @media (max-width: 1280px) {
+            font-size: 2.75em;
             padding: 0 0 4.5rem 10.5rem;
         }
 
-        @media (max-width: 1070px) {
-            padding: 0 0 2.25rem 5.25rem;
+        @media (max-width: 1040px) {
+            font-size: 2.5em;
+        }
+
+        @media (max-width: 800px) {
+            font-size: 2.25em;
+            line-height: 4rem;
+            padding: 0 0 4.5rem 4.5rem;
         }
     }
 `
 
 export const StyledList = styled.div`
     grid-column-start: 12;
-    grid-column-end: 16;
+    grid-column-end: 17;
 
-    @media (max-width: 1620px) {
+    @media (max-width: 1280px) {
         grid-column-start: 11;
     }
 
-    @media (max-width: 1290px) {
-        grid-column-start: 10;
-    }
-
-    @media (max-width: 1070px) {
-        grid-column-start: 9;
-    }
-
     @media (max-width: 1040px) {
-        grid-column-start: 4;
+        grid-column-start: 5;
+        grid-column-end: 13;
+        margin-top: 4.5rem;
+    }
+
+    @media (max-width: 800px) {
         grid-column-end: 16;
-        margin-top: 5.25rem;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-start: 4;
     }
 
     h3 {
@@ -103,6 +101,10 @@ export const StyledList = styled.div`
             font-family: "Space Grotesk";
             color: ${({ theme }) => theme.colors.darkgreen};
             padding-right: 4.5rem;
+
+            @media (max-width: 1280px) {
+                padding-right: 3.5rem;
+            }
         }
 
         li:first-child {
@@ -114,6 +116,10 @@ export const StyledList = styled.div`
             font-weight: normal;
             font-size: 1.5em;
             padding-left: 6.8rem;
+
+            @media (max-width: 1280px) {
+                padding-left: 5.8rem;
+            }
         }
     }
 `

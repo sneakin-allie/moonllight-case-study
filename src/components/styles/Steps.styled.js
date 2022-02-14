@@ -6,7 +6,9 @@ export const StyledSteps = styled.section`
     grid-column-gap: 1.5rem;
     margin: 13.5rem 0;
 
-
+    @media (max-width: 1280px) {
+        margin: 9rem 0;
+    }
 `
 
 export const StyledNum = styled.div`
@@ -17,8 +19,8 @@ export const StyledNum = styled.div`
         grid-column-start: 3;
     }
 
-    @media (max-width: 1040px) {
-        grid-column-start: 2;
+    @media (max-width: 800px) {
+        grid-column-end: 15;
     }
 
     h5 { // Number
@@ -50,15 +52,10 @@ export const StyledContent = styled.div`
         grid-column-end: 15;
     }
 
-    /*
     @media (max-width: 800px) {
-        grid-column-start: 4;
-    }
-
-    @media (max-width: 560px) {
+        grid-column-start: 3;
         grid-column-end: 15;
     }
-    */
 
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};

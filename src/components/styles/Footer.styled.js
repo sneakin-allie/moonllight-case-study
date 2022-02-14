@@ -2,27 +2,20 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};
-    padding-top: 4.5rem;
 `
 
 export const FooterGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    margin: 0 4.5rem 0 4.5rem;
+    padding: 4.5rem;
 
-    @media (max-width: 1350px) {
-        grid-column-gap: 1rem;
-        margin: 0 2.5rem 0rem 2.5rem;
+    @media (max-width: 1600px) {
+        padding: 2.5rem 0;
     }
 
     @media (max-width: 1280px) {
-        grid-column-gap: 0rem;
-        margin: 0 1rem 0rem 1rem;
-    }
 
-    @media (max-width: 1040px) {
-        margin: 0 0 0rem 0;
     }
 
     p {
@@ -53,18 +46,10 @@ export const FooterGrid = styled.div`
 export const StyledPractApp = styled.div`
     grid-column-start: 2;
     grid-column-end: 8;
+    margin: auto;
 
     @media (max-width: 1040px) {
-        grid-column-start: 2;
-        grid-column-end: 16;
-    }
-
-    @media (max-width: 800px) {
-        grid-column-start: 4;
-    }
-
-    @media (max-width: 560px) {
-        grid-column-start: 3;
+        display: none;
     }
 
     p {
@@ -82,15 +67,6 @@ export const StyledPractApp = styled.div`
             font-size: 6em;
             line-height: 8rem;
         }
-
-        @media (max-width: 1040px) {
-            font-size: 4.5em;
-        }
-
-        @media (max-width: 800px) {
-            line-height: 6rem;
-            margin-bottom: 4rem;
-        }
     }
 
 `
@@ -104,19 +80,17 @@ export const StyledNavigate = styled.ul`
     margin: 0;
     padding: 0;
 
+    @media (max-width: 1280px) {
+        grid-column-start: 10;
+    }
+
     @media (max-width: 1040px) {
         grid-column-start: 5;
         grid-column-end: 8;
     }
 
     @media (max-width: 800px) {
-        grid-column-start: 5;
-        grid-column-end: 9;
-    }
-
-    @media (max-width: 560px) {
-        grid-column-start: 4;
-        grid-column-end: 8;
+        grid-column-start: 3;
     }
 `
 
@@ -127,27 +101,21 @@ export const StyledExplore = styled.ul`
     margin: 0;
     padding: 0;
 
+    @media (max-width: 1280px) {
+        grid-column-start: 13;
+    }
+
     @media (max-width: 1040px) {
         grid-column-start: 10;
         grid-column-end: 13;
     }
 
     @media (max-width: 800px) {
-        grid-column-start: 10;
-        grid-column-end: 14;
-    }
-
-    @media (max-width: 560px) {
-        grid-column-start: 10;
         grid-column-end: 15;
     }
 
     svg {
         padding-right: 1rem;
-
-        @media (max-width: 1280px) {
-            padding-right: 0.5rem;
-        }
     }
 `
 
@@ -158,12 +126,8 @@ export const NavGrid = styled.nav`
     grid-column-gap: 1.5rem;
     padding: 2.5rem 0;
     margin: 0;
-
-    @media (max-width: 1600px) {
-        grid-column-gap: 0rem;
-    }
 `
-export const StyledLogoFooter = styled.svg`
+export const StyledWhiteLogo = styled.div`
     grid-column-start: 2;
     grid-column-end: 5;
 `
@@ -195,7 +159,7 @@ export const StyledContact = styled.div`
 
         @media (max-width: 800px) {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
     }
     
@@ -240,26 +204,57 @@ export const StyledContact = styled.div`
 
 // --- Motifs --- //
 
-export const StyledTealSquare = styled.div`
-    grid-column-start: 10;
-    
-    div {
-        background-color: ${({ theme }) => theme.colors.teal};
-        height: 3rem;
-        opacity: 0.5;
-        width: 3rem;
+export const SmX = styled.div`
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+
+    svg {
+        height: 1.5vw;
+        margin-top: 9rem;
+        position: absolute;
+        right: 30%;
+        width: 1.5vw;
     }
 `
 
-export const StyledOmbreSquares = styled.div`
+export const MedTealSquare = styled.div`
+    grid-column-start: 9;
+    grid-column-end: 10;
+    position: relative;
+    
+    div {
+        background-color: ${({ theme }) => theme.colors.teal};
+        height: 2.5vw;
+        opacity: 0.5;
+        position: absolute;
+        width: 2.5vw;
+    }
+`
+
+export const OmbreSquares = styled.div`
     grid-column-start: 8;
     grid-column-end: 10;
+    position: relative;
+
+    svg {
+        position: absolute;
+        margin-top: 5rem;
+        right: 25%;
+        width: 6.67vw;
+    }
 `
 
-export const StyledX = styled.div`
+export const WindowPanes = styled.div`
     grid-column-start: 1;
-`
+    grid-column-end: 2;
+    position: relative;
 
-export const StyledSquareGroup = styled.div`
-    grid-column-start: 1;
+    svg {
+        bottom: 0;
+        height: 3.75vw;
+        margin-bottom: -4.5rem;
+        position: absolute;
+        width: 3.75vw;
+    }
 `

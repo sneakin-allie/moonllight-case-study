@@ -5,17 +5,18 @@ export const StyledPremise = styled.section`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
+    margin-top: 9rem;
 
     @media (max-width: 1040px) {
         margin-top: 4.5rem;
     }
 
     @media (max-width: 800px) {
-        margin-top: 13.5rem;
+        margin-top: 9rem;
     }
 
     @media (max-width: 560px) {
-        margin-top: 18rem;
+        margin-top: 13.5rem;
     }
 `
 

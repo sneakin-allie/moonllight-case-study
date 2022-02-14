@@ -10,10 +10,20 @@ export const StyledProjectGoalsImages = styled.section`
 export const StyledImageOne = styled.div`
     grid-column-start: 2;
     grid-column-end: 8; 
+
+    @media (max-width: 800px) {
+        grid-column-start: 3;
+        grid-column-end: 15; 
+    }
 `
 
 export const StyledImageTwo = styled.div`
     grid-column-start: 9;
     grid-column-end: 17;
     margin-top: 7rem;
+
+    @media (max-width: 800px) {
+        grid-column-start: 3;
+        grid-column-end: 15
+    }
 `
