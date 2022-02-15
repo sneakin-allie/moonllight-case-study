@@ -64,7 +64,8 @@ export const StyledList = styled.div`
     @media (max-width: 1040px) {
         grid-column-start: 1;
         grid-column-end: 16;
-        margin: 4.5rem;
+        margin: auto;
+        margin-top: 9rem;
     }
 
     h3 {

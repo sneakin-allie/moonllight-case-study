@@ -4,47 +4,44 @@ export const StyledExplore = styled.section`
     background-color: ${({ theme }) => theme.colors.darkslategray};
 `
 
-export const StyledTitle = styled.div`
-    grid-column-start: 3;
-    grid-column-end: 15;
-
-    @media (max-width: 1280px) {
-        grid-column-start: 2;
-    }
-
-    @media (max-width: 800px) {
-        grid-column-start: 3;
-        grid-column-end: 15;
-    }
-
-    h5 { 
-        color: ${({ theme }) => theme.colors.silver};
-        letter-spacing: 0.25em;
-        padding: 0;
-        margin: 9rem 0 2rem 2rem;
-    }
-`
-
 // --- Cards ---//
 
 export const CardGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
+    margin: 0 4.5rem;
+`
 
-    @media (max-width: 1600px) {
-        grid-column-gap: 0rem;
+export const StyledTitle = styled.div`
+    grid-column-start: 3;
+    grid-column-end: 16;
+
+    @media (max-width: 1280px) {
+        grid-column-start: 2;
+    }
+
+    h5 { 
+        color: ${({ theme }) => theme.colors.silver};
+        letter-spacing: 0.25em;
+        padding: 0;
+        margin: 9rem 0 4.5rem 0;
     }
 `
 
 export const ProductDiscoveryCard = styled.div`
     grid-column-start: 3;
     grid-column-end: 9;
-    margin: 2rem;
 
     @media (max-width: 1280px) {
         grid-column-start: 2;
         grid-column-end: 9;
+    }
+
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+        grid-column-end: 16;
+        margin-bottom: 9rem;
     }
 
     @media (max-width: 800px) {
@@ -54,6 +51,10 @@ export const ProductDiscoveryCard = styled.div`
 
     img {
         margin-bottom: 3rem;
+    }
+
+    div {
+        margin: auto;
     }
 
     h3 {
@@ -67,11 +68,6 @@ export const ProductDiscoveryCard = styled.div`
 
         @media (max-width: 1280px) {
             font-size: 2em;
-        }
-
-        @media (max-width: 1040px) {
-            font-size: 1.5em;
-            margin: 0 0 0 1rem;
         }
 
         @media (max-width: 800px) {
@@ -98,12 +94,15 @@ export const ProductDiscoveryCard = styled.div`
 export const DevelopmentCard = styled.div`
     grid-column-start: 9;
     grid-column-end: 15;
-    margin: 2rem;
 
     @media (max-width: 1280px) {
         grid-column-start: 9;
         grid-column-end: 16;
-        margin: 2rem;
+    }
+
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+        grid-column-end: 16;
     }
 
     @media (max-width: 800px) {
@@ -126,11 +125,6 @@ export const DevelopmentCard = styled.div`
 
         @media (max-width: 1280px) {
             font-size: 2em;
-        }
-
-        @media (max-width: 1040px) {
-            font-size: 1.5em;
-            margin: 0 0 0 1rem;
         }
 
         @media (max-width: 800px) {
@@ -199,14 +193,14 @@ export const StyledNotesForm = styled.div`
     margin-left: auto;
     margin-right: auto;
     padding: 12rem 0;
-    width: 33%;
+    width: 33vw;
 
     @media (max-width: 1280px) {
-        width: 50%;
+        width: 50vw;
     }
 
-    @media (max-width: 800px) {
-        width: 66%;
+    @media (max-width: 1040px) {
+        width: 80vw;
     }
 
     h1 { // Let's Compare Notes
@@ -215,10 +209,6 @@ export const StyledNotesForm = styled.div`
 
         @media (max-width: 1280px) {
             font-size: 3.2rem;
-        }
-
-        @media (max-width: 1040px) {
-            font-size: 2.5rem;
         }
 
         @media (max-width: 800px) {

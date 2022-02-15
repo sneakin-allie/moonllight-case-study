@@ -4,10 +4,11 @@ export const StyledSteps = styled.section`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    margin: 13.5rem 0;
+    margin: 13.5rem 4.5rem;
+    padding: 0;
 
-    @media (max-width: 1280px) {
-        margin: 9rem 0;
+    @media (max-width: 1040px) {
+        margin: 4.5rem;
     }
 `
 
@@ -19,8 +20,9 @@ export const StyledNum = styled.div`
         grid-column-start: 3;
     }
 
-    @media (max-width: 800px) {
-        grid-column-end: 15;
+    @media (max-width: 1040px) {
+        grid-column-start: 1;
+        grid-column-end: 16;
     }
 
     h5 { // Number
@@ -35,11 +37,13 @@ export const StyledNum = styled.div`
 
     h1 { // Section title
         color: ${({ theme }) => theme.colors.darkgreen};
-        margin-top: 1.5rem;
+        margin: 1.5rem 0 4.5rem 0;
 
+        /*
         @media (max-width: 1280px) {
             font-size: 3.5em;
         }
+        */
     }
 `
 
@@ -52,6 +56,11 @@ export const StyledContent = styled.div`
         grid-column-end: 15;
     }
 
+    @media (max-width: 1040px) {
+        grid-column-start: 1;
+        grid-column-end: 17;
+    }
+
     @media (max-width: 800px) {
         grid-column-start: 3;
         grid-column-end: 15;
@@ -59,7 +68,7 @@ export const StyledContent = styled.div`
 
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};
-        margin: 1rem 0;
+        margin: 0 0 1rem 0;
     }
 
     p {
@@ -67,6 +76,6 @@ export const StyledContent = styled.div`
         font-family: 'IBM Plex Serif';
         font-size: 1.5em;
         line-height: 1.75em;
-        margin: 0 0 3.5rem 0;
+        margin: 0 0 4.5rem 0;
     }
 `

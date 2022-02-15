@@ -7,8 +7,11 @@ export const StyledResults = styled.section`
     margin: 13.5rem 0 18rem 0;
 
     @media (max-width: 1280px) {
-        grid-column-gap: 0;
         margin: 9rem 0 18rem 0;
+    }
+
+    @media (max-width: 1040px) {
+        margin: 9rem 0;
     }
 
     @media (max-width: 560px) {

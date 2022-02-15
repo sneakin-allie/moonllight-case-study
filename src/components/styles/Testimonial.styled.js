@@ -47,7 +47,6 @@ export const StyledQuote = styled.div`
     @media (max-width: 1040px) {
         grid-column-start: 2;
         grid-column-end: 16;
-        padding-left: 4rem;
     }
 
     @media (max-width: 800px) {
@@ -95,11 +94,8 @@ export const StyledClient = styled.div`
     }
 
     @media (max-width: 800px) {
-        margin-bottom: 2.5rem;
-    }
-
-    @media (max-width: 800px) {
         grid-column-start: 1;
+        margin-bottom: 2.5rem;
         padding-left: 3.5rem;
     }
 
@@ -171,6 +167,10 @@ export const WhiteLines = styled.div`
     grid-column-start: 7;
     grid-column-end: 9;
 
+    @media (max-width: 1040px) {
+        padding: 9rem 0 2.5rem 0;
+    }
+    
     svg {
         height: 6.67vw;
         width: 6.67vw;
@@ -285,6 +285,10 @@ export const X = styled.div`
 export const WhiteSquaresX = styled.div`
     grid-column-start: 12;
     grid-column-end: 14;
+
+    @media (max-width: 1040px) {
+        padding: 2.5rem 0 9rem 0;
+    }
 
     svg {
         height: 6.67vw;

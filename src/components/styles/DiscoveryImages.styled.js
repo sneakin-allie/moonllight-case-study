@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const StyledDiscoveryImages = styled.section`
     margin: 0 12.625rem;
 
+    @media (max-width: 1040px) {
+        margin: 0 4.5rem 9rem 4.5rem;
+    }
+
     @media (max-width: 800px) {
         margin: 0 6.625rem;
     }
