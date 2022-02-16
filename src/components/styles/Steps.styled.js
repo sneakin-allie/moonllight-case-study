@@ -5,22 +5,21 @@ export const StyledSteps = styled.section`
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     margin: 13.5rem 4.5rem;
-    padding: 0;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         margin: 4.5rem;
     }
 `
 
 export const StyledNum = styled.div`
     grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-end: 7;
 
     @media (max-width: 1280px) {
         grid-column-start: 3;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 16;
     }
@@ -56,18 +55,14 @@ export const StyledContent = styled.div`
         grid-column-end: 15;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 17;
     }
 
-    @media (max-width: 800px) {
-        grid-column-start: 3;
-        grid-column-end: 15;
-    }
-
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};
+        line-height: 4.5rem;
         margin: 0 0 1rem 0;
     }
 
@@ -77,5 +72,9 @@ export const StyledContent = styled.div`
         font-size: 1.5em;
         line-height: 1.75em;
         margin: 0 0 4.5rem 0;
+    }
+
+    p:last-child {
+        margin: 0;
     }
 `

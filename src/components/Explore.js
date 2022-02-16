@@ -1,15 +1,13 @@
-import { CardGrid, ProductDiscoveryCard, DevelopmentCard, StyledExplore, StyledNotesForm, StyledNumber, StyledTitle } from "./styles/Explore.styled";
+import { Cards, ProductDiscoveryCard, DevelopmentCard, StyledExplore, StyledNotesForm, StyledNumber } from "./styles/Explore.styled";
 import stickynotes from "../assets/stickynotes.jpg";
 import developing from "../assets/developing.jpg";
 
 export default function Explore() {
     return (
-        <StyledExplore>
-            <CardGrid>
-                <StyledTitle>
-                    <h5>EXPLORE OUR OTHER SERVICES</h5>
-                </StyledTitle>
+        <StyledExplore> 
+            <Cards>
                 <ProductDiscoveryCard>
+                    <h5>EXPLORE OUR OTHER SERVICES</h5>
                     <img src={stickynotes} alt="brainstorming with sticky notes" />
                     <div>
                         <StyledNumber>
@@ -20,6 +18,7 @@ export default function Explore() {
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </ProductDiscoveryCard>
                 <DevelopmentCard>
+                    <h5>EXPLORE OUR OTHER SERVICES</h5>
                     <img src={developing} alt="developer working at a computer" />
                     <div>
                         <StyledNumber>
@@ -29,7 +28,7 @@ export default function Explore() {
                     </div>    
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </DevelopmentCard>
-            </CardGrid>
+            </Cards>
             <StyledNotesForm>
                 <h1>Let's Compare Notes</h1>
                 <p>We're always looking for a chance to talk shop. Even if we're not the right fit today, we'll be your go-to resource whenever new questions pop up.</p>

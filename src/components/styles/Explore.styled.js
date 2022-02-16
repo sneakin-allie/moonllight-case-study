@@ -6,47 +6,34 @@ export const StyledExplore = styled.section`
 
 // --- Cards ---//
 
-export const CardGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-    margin: 0 4.5rem;
-`
-
-export const StyledTitle = styled.div`
-    grid-column-start: 3;
-    grid-column-end: 16;
-
-    @media (max-width: 1280px) {
-        grid-column-start: 2;
-    }
-
-    h5 { 
-        color: ${({ theme }) => theme.colors.silver};
-        letter-spacing: 0.25em;
-        padding: 0;
-        margin: 9rem 0 4.5rem 0;
-    }
+export const Cards = styled.div`
+    display: flex;
+    gap: 8.375rem;
+    justify-content: center;
+    padding: 4.5rem;
 `
 
 export const ProductDiscoveryCard = styled.div`
-    grid-column-start: 3;
-    grid-column-end: 9;
-
+    width: 28vw;
+    // margin: 4.188rem;
+    /*
     @media (max-width: 1280px) {
         grid-column-start: 2;
         grid-column-end: 9;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 2;
         grid-column-end: 16;
         margin-bottom: 9rem;
     }
+    */
 
-    @media (max-width: 800px) {
-        grid-column-start: 3;
-        grid-column-end: 15;
+    h5 { 
+        color: ${({ theme }) => theme.colors.silver};
+        letter-spacing: 0.25em;
+        margin: 9rem 0 4.5rem 0;
+        padding: 0;
     }
 
     img {
@@ -55,11 +42,13 @@ export const ProductDiscoveryCard = styled.div`
 
     div {
         margin: auto;
+        vertical-align: middle;
     }
 
     h3 {
         color: white;
         display: inline-block;
+        vertical-align: middle;
         margin: 0 0 0 1.5rem;
 
         @media (max-width: 1600px) {
@@ -92,31 +81,40 @@ export const ProductDiscoveryCard = styled.div`
 `
 
 export const DevelopmentCard = styled.div`
-    grid-column-start: 9;
-    grid-column-end: 15;
-
+    // margin: 4.188rem;
+    width: 28vw;
+    /*
     @media (max-width: 1280px) {
         grid-column-start: 9;
         grid-column-end: 16;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 2;
         grid-column-end: 16;
     }
+    */
 
-    @media (max-width: 800px) {
-        grid-column-start: 3;
-        grid-column-end: 15;
+    h5 { 
+        color: ${({ theme }) => theme.colors.darkslategray};
+        letter-spacing: 0.25em;
+        margin: 9rem 0 4.5rem 0;
+        padding: 0;
     }
 
     img {
         margin-bottom: 3rem;
     }
 
+    div {
+        margin: auto;
+        vertical-align: middle;
+    }
+
     h3 {
         color: white;
         display: inline-block;
+        vertical-align: middle;
         margin: 0 0 0 1.5rem;
 
         @media (max-width: 1600px) {
@@ -172,7 +170,7 @@ export const StyledNumber = styled.div`
         width: 3.5rem;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         font-size: 1.3em;
         height: 3rem;
         line-height: 3rem;
@@ -199,7 +197,7 @@ export const StyledNotesForm = styled.div`
         width: 50vw;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         width: 80vw;
     }
 

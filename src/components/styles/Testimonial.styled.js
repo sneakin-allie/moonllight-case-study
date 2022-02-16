@@ -44,14 +44,9 @@ export const StyledQuote = styled.div`
         padding-left: 4.5rem;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 2;
         grid-column-end: 16;
-    }
-
-    @media (max-width: 800px) {
-        grid-column-start: 1;
-        padding-left: 3.5rem;
     }
 
     @media (max-width: 560px) {
@@ -88,15 +83,9 @@ export const StyledClient = styled.div`
         padding-left: 4.5rem;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 2;
         padding-left: 4rem;
-    }
-
-    @media (max-width: 800px) {
-        grid-column-start: 1;
-        margin-bottom: 2.5rem;
-        padding-left: 3.5rem;
     }
 
     @media (max-width: 560px) {
@@ -167,7 +156,7 @@ export const WhiteLines = styled.div`
     grid-column-start: 7;
     grid-column-end: 9;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         padding: 9rem 0 2.5rem 0;
     }
     
@@ -286,7 +275,7 @@ export const WhiteSquaresX = styled.div`
     grid-column-start: 12;
     grid-column-end: 14;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         padding: 2.5rem 0 9rem 0;
     }
 

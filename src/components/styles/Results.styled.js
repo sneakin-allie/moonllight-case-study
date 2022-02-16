@@ -5,12 +5,13 @@ export const StyledResults = styled.section`
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
     margin: 13.5rem 0 18rem 0;
+    padding-left: 4.5rem;
 
     @media (max-width: 1280px) {
         margin: 9rem 0 18rem 0;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         margin: 9rem 0;
     }
 
@@ -28,7 +29,7 @@ export const StyledResults = styled.section`
             grid-column-start: 5;
         }
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             grid-column-start: 4;
         }
 
@@ -46,17 +47,14 @@ export const StyledResults = styled.section`
         grid-column-end: 15;
         line-height: 4.25rem;
         margin: 0;
+        padding-right: 4.5rem;
 
         @media (max-width: 1280px) {
             grid-column-start: 5;
         }
 
-        @media (max-width: 1040px) {
-            grid-column-start: 4;
-        }
-
         @media (max-width: 800px) {
-            font-size: 2.75em;
+            grid-column-start: 4;
         }
 
         @media (max-width: 560px) {
@@ -77,7 +75,7 @@ export const StyledResults = styled.section`
             padding-bottom: 9rem;
         }
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             grid-column-start: 4;
         }
 

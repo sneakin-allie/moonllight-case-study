@@ -52,11 +52,11 @@ export default function Footer() {
                         <rect opacity="0.1" x="58.9092" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
                     </svg>
                 </WindowPanes>
-                
+                */}
                 <StyledPractApp>
                     <p><em>Practical</em> App<em>lications.</em></p>
                 </StyledPractApp>
-                */}
+                
                 <StyledNavigate>
                     <h6>NAVIGATE</h6>
                     <li><a href="#">What We Do</a></li>

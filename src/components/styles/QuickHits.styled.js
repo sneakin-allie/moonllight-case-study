@@ -4,9 +4,8 @@ export const StyledQuickHits = styled.section`
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-column-gap: 1.5rem;
-    margin-bottom: 13.5rem;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         margin-bottom: 0rem;
     }    
 `             
@@ -19,7 +18,7 @@ export const StyledPara = styled.div`
         grid-column-end: 10;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 15;
     }
@@ -40,15 +39,9 @@ export const StyledPara = styled.div`
             // padding: 0 0 4.5rem 10.5rem;
         }
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             font-size: 2.5em;
             padding: 0 0 4.5rem 10.5rem; 
-        }
-
-        @media (max-width: 800px) {
-            font-size: 2.25em;
-            line-height: 4rem;
-            padding: 0 0 4.5rem 4.5rem;
         }
     }
 `
@@ -61,7 +54,7 @@ export const StyledList = styled.div`
         grid-column-start: 11;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 16;
         margin: auto;
@@ -70,7 +63,7 @@ export const StyledList = styled.div`
 
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};
-        margin: 0 0 2.5rem 0;
+        margin: 0;
     }
 
     ol {
@@ -87,7 +80,7 @@ export const StyledList = styled.div`
         font-family: "IBM Plex Serif";
         color: ${({ theme }) => theme.colors.gunmetalgray};
         line-height: 2.5rem;
-        padding: 0 0 3rem 0;
+        padding: 0;
 
         li:first-child::before {
             counter-increment: count;
@@ -106,6 +99,7 @@ export const StyledList = styled.div`
         li:first-child {
             font-weight: bold;
             font-size: 1.875em;
+            margin-top: 3rem;
         }
 
         li:nth-child(1n + 2) {

@@ -17,7 +17,7 @@ export const StyledTitle = styled.div`
     grid-column-end: 13;
     margin-bottom: 1.125rem;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 16;
     }
@@ -25,7 +25,7 @@ export const StyledTitle = styled.div`
     p {
         margin: 0;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             font-size: 3.75rem;
         }
     }
@@ -40,7 +40,7 @@ export const StyledBody = styled.div`
     grid-column-start: 4;
     grid-column-end: 13;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 17;
     }

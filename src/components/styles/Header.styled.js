@@ -30,7 +30,7 @@ export const StyledLogo = styled.div`
         margin: 0;
         vertical-align: middle;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             display: none;
         }
     }
@@ -45,14 +45,14 @@ export const StyledLinks = styled.div`
         margin-right: 0;
     }
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         flex-direction: column;
     }
 
     a:nth-child(2) {
         padding: 0 1rem 0 2rem;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             padding: 1rem 0 0 0;
         }
     }
@@ -60,7 +60,7 @@ export const StyledLinks = styled.div`
     a:nth-child(3) {
         padding: 0 1rem;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             padding: 1rem 0;
         }
     }
@@ -68,7 +68,7 @@ export const StyledLinks = styled.div`
     a:nth-child(4) {
         padding: 0 2rem 0 1rem;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             padding: 0 0 1rem 0;
         }
     }
@@ -101,7 +101,7 @@ export const ContentGrid = styled.div`
         grid-column-end: 15;
         margin: 0;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             grid-column-start: 2;
             grid-column-end: 16;
         }
@@ -123,13 +123,9 @@ export const ContentGrid = styled.div`
         padding: 4.5rem 0 3.125rem 0;
         margin: 0;
 
-        @media (max-width: 1040px) {
-            font-size: 8em;
-            grid-column-start: 2;
-        }
-    
         @media (max-width: 800px) {
             font-size: 5.5em;
+            grid-column-start: 2;
         }
 
         @media (max-width: 560px) {
@@ -146,7 +142,7 @@ export const ContentGrid = styled.div`
         line-height: 1.5em;
         padding: 0;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             grid-column-start: 2;
             grid-column-end: 16;
         }

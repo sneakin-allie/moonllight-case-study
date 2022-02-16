@@ -1,11 +1,17 @@
 import { createGlobalStyle } from "styled-components";
+import { normalize } from 'styled-normalize';
 
 const GlobalStyles = createGlobalStyle`
+    ${normalize}
 
     html, body {
         margin: 0;
         padding: 0;
         width: 100vw;
+    }
+
+    html {
+        font-size: 16px;
     }
 
     h1 {

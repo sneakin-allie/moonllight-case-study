@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const StyledFooter = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     display: flex;
-    // padding: 2.5rem;
+    flex-direction: column;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         flex-direction: column-reverse;
     }
     
@@ -63,14 +63,23 @@ export const FooterGrid = styled.div`
 `
 */
 
+export const FooterContent = styled.div`
+    display: flex;
+    gap: 8.375rem;
+    justify-content: center;
+    padding: 4.5rem;
+
+    @media (max-width: 800px) {
+        justify-content: space-around;
+    }
+`
+
 // --- PRACTICAL APPLICATIONS --- //
 
 export const StyledPractApp = styled.div`
-    grid-column-start: 2;
-    grid-column-end: 8;
-    margin: auto;
+    width: 45vw;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         display: none;
     }
 
@@ -94,69 +103,29 @@ export const StyledPractApp = styled.div`
 `
 
 // --- Navigate and Explore sections --- //
-export const FooterContent = styled.div`
-    display: flex;
-
-    @media (max-width: 1040px) {
-        justify-content: space-around;
-    }
-`
 
 export const StyledNavigate = styled.ul`
     list-style-type: none;
-    /*
-    grid-column-start: 11;
-    grid-column-end: 13;
-    */
+    width: 10vw;
     margin: 0;
     padding: 0;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         margin: 2.5rem;
         width: 50vw;
     }
-
-    /*
-    @media (max-width: 1280px) {
-        grid-column-start: 10;
-    }
-
-    @media (max-width: 1040px) {
-        grid-column-start: 1;
-        grid-column-end: 9;
-    }
-    */
 `
 
 export const StyledExplore = styled.ul`
-    /*
-    grid-column-start: 14;
-    grid-column-end: 16;
-    */
-
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 10vw;
 
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         margin: 2.5rem;
         width: 50vw;
     }
-
-    /*
-    @media (max-width: 1280px) {
-        grid-column-start: 13;
-    }
-
-    @media (max-width: 1040px) {
-        grid-column-start: 9;
-        grid-column-end: 17;
-    }
-
-    @media (max-width: 800px) {
-        grid-column-end: 15;
-    }
-    */
 
     svg {
         padding-right: 1rem;
@@ -165,8 +134,14 @@ export const StyledExplore = styled.ul`
 
 export const Nav = styled.div`
     background-color: ${({ theme }) => theme.colors.darkestgreen};
-    padding: 2.5rem;
+    display: flex;
     margin: 0;
+    vertical-align: middle;
+
+    @media (max-width: 800px) {
+        padding: 2.5rem;
+    }
+    
 `
 
 /*
@@ -181,33 +156,16 @@ export const NavGrid = styled.nav`
 */
 
 export const StyledWhiteLogo = styled.div`
-    margin: 0 0 4.5rem 0;
-    /*
-    grid-column-start: 2;
-    grid-column-end: 5;
-    */
+    margin: 1.625rem 0;
+
+    @media (max-width: 800px) {
+        margin: 0 0 4.5rem 0;
+    }
+    
 `
 
 export const StyledContact = styled.div`
-    /*
-    grid-column-start: 10;
-    grid-column-end: 17;
-    */
-
-    /*
-    @media (max-width: 1600px) {
-        grid-column-start: 8;
-    }
-
-    @media (max-width: 1280px) {
-        grid-column-start: 6;
-    }
-
-    @media (max-width: 1040px) {
-        grid-column-start: 2;
-        padding-top: 2.5rem;
-    }
-    */
+    display: flex;
 
     h6 { // GET IN TOUCH
         border: none;
@@ -218,7 +176,7 @@ export const StyledContact = styled.div`
         padding: 0;
         vertical-align: middle;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             display: none;
         }
     }
@@ -229,7 +187,11 @@ export const StyledContact = styled.div`
         font-weight: normal;
         font-size: 1.25em;
         color: ${({ theme }) => theme.colors.palemint};
-        margin: 0 0 2.5rem 0;
+
+        @media (max-width: 800px) {
+            margin: 0 0 2.5rem 0;
+        }
+        
         // vertical-align: middle;
 
         /*
@@ -256,7 +218,7 @@ export const StyledContact = styled.div`
         margin-right: 0.5rem;
         vertical-align: middle;
 
-        @media (max-width: 1040px) {
+        @media (max-width: 800px) {
             display: none;
         }
     }

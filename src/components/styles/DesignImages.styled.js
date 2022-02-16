@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledDesignImages = styled.section`
-    @media (max-width: 1040px) {
+    @media (max-width: 800px) {
         margin: 0 4.5rem 9rem 4.5rem;
     }
 `
