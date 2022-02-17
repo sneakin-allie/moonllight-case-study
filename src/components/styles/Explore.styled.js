@@ -81,19 +81,7 @@ export const ProductDiscoveryCard = styled.div`
 `
 
 export const DevelopmentCard = styled.div`
-    // margin: 4.188rem;
     width: 28vw;
-    /*
-    @media (max-width: 1280px) {
-        grid-column-start: 9;
-        grid-column-end: 16;
-    }
-
-    @media (max-width: 800px) {
-        grid-column-start: 2;
-        grid-column-end: 16;
-    }
-    */
 
     h5 { 
         color: ${({ theme }) => theme.colors.darkslategray};
@@ -228,6 +216,7 @@ export const StyledNotesForm = styled.div`
         font-family: "Space Grotesk";
         font-size: 1.25em;
         font-weight: normal;
+        line-height: 2.25rem;
     }
 
     input {
@@ -261,6 +250,7 @@ export const StyledNotesForm = styled.div`
         justify-content: space-between;
         height: 4.188rem;
         letter-spacing: 0.25em;
+        margin-top: 2.5rem; 
         padding: 0 1.5rem;
         width: 19.125rem;
     }

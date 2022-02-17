@@ -4,57 +4,55 @@ export default function Footer() {
     return (
         <StyledFooter>
             <FooterContent>
-                {/*
-                <MedTealSquare>
-                    <div></div>
-                </MedTealSquare>
-                <OmbreSquares>
-                    <svg width="129" height="12" viewBox="0 0 129 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1597 0H0.0292969V11.1304H11.1597V0ZM27.8555 0H16.7251V11.1304H27.8555V0ZM33.4209 0H44.5513V11.1304H33.4209V0ZM61.2466 0H50.1162V11.1304H61.2466V0ZM66.812 0H77.9424V11.1304H66.812V0ZM94.6382 0H83.5078V11.1304H94.6382V0ZM100.203 0H111.334V11.1304H100.203V0ZM128.029 0H116.899V11.1304H128.029V0Z" fill="url(#paint0_linear_2357_1073)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_2357_1073" x1="0.0292969" y1="0" x2="128.029" y2="11" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#7EE8B9" stop-opacity="0.5"/>
-                        <stop offset="1" stop-color="#83E4B9" stop-opacity="0"/>
-                        <stop offset="1" stop-color="#7EE8B9" stop-opacity="0.1"/>
-                        </linearGradient>
-                        </defs>
-                    </svg>
-                </OmbreSquares>
-                <SmX>
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10051 24.1005L9.92893 26.9289L17 19.8579L24.0711 26.9289L26.8995 24.1005L19.8284 17.0294L26.8995 9.95837L24.0711 7.12994L17 14.201L9.92893 7.12994L7.1005 9.95837L14.1716 17.0294L7.10051 24.1005Z" fill="url(#paint0_linear_2357_1083)"/>
-                        <defs>
-                        <linearGradient id="paint0_linear_2357_1083" x1="8.51472" y1="25.5147" x2="25.4853" y2="8.54416" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#7EE8B9" stop-opacity="0.5"/>
-                        <stop offset="1" stop-color="#83E4B9" stop-opacity="0"/>
-                        <stop offset="1" stop-color="#7EE8B9" stop-opacity="0.1"/>
-                        </linearGradient>
-                        </defs>
-                    </svg>
-                </SmX>
-                <WindowPanes>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect opacity="0.1" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="19.6366" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="19.6366" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="19.6366" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="19.6366" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="39.2727" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="39.2727" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="39.2727" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="39.2727" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="58.9092" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="58.9092" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="58.9092" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                        <rect opacity="0.1" x="58.9092" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
-                    </svg>
-                </WindowPanes>
-                */}
                 <StyledPractApp>
+                    <SmX>
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10051 24.1005L9.92893 26.9289L17 19.8579L24.0711 26.9289L26.8995 24.1005L19.8284 17.0294L26.8995 9.95837L24.0711 7.12994L17 14.201L9.92893 7.12994L7.1005 9.95837L14.1716 17.0294L7.10051 24.1005Z" fill="url(#paint0_linear_2357_1083)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_2357_1083" x1="8.51472" y1="25.5147" x2="25.4853" y2="8.54416" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#7EE8B9" stop-opacity="0.5"/>
+                            <stop offset="1" stop-color="#83E4B9" stop-opacity="0"/>
+                            <stop offset="1" stop-color="#7EE8B9" stop-opacity="0.1"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </SmX>
+                    <WindowPanes>
+                        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="19.6366" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="19.6366" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="19.6366" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="19.6366" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="39.2727" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="39.2727" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="39.2727" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="39.2727" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="58.9092" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="58.9092" y="19.6367" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="58.9092" y="39.2734" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                            <rect opacity="0.1" x="58.9092" y="58.9082" width="13.0909" height="13.0909" fill="#BEF0DB"/>
+                        </svg>
+                    </WindowPanes>
                     <p><em>Practical</em> App<em>lications.</em></p>
+                    <MedTealSquare>
+                    <div></div>
+                    </MedTealSquare>
+                    <OmbreSquares>
+                        <svg width="129" height="12" viewBox="0 0 129 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1597 0H0.0292969V11.1304H11.1597V0ZM27.8555 0H16.7251V11.1304H27.8555V0ZM33.4209 0H44.5513V11.1304H33.4209V0ZM61.2466 0H50.1162V11.1304H61.2466V0ZM66.812 0H77.9424V11.1304H66.812V0ZM94.6382 0H83.5078V11.1304H94.6382V0ZM100.203 0H111.334V11.1304H100.203V0ZM128.029 0H116.899V11.1304H128.029V0Z" fill="url(#paint0_linear_2357_1073)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_2357_1073" x1="0.0292969" y1="0" x2="128.029" y2="11" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#7EE8B9" stop-opacity="0.5"/>
+                            <stop offset="1" stop-color="#83E4B9" stop-opacity="0"/>
+                            <stop offset="1" stop-color="#7EE8B9" stop-opacity="0.1"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>
+                    </OmbreSquares>
                 </StyledPractApp>
                 
                 <StyledNavigate>

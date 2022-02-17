@@ -32,37 +32,6 @@ export const StyledFooter = styled.section`
     }
 `
 
-/*
-export const FooterGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-    padding: 4.5rem;
-
-    p {
-        padding: 0;
-        margin: 0;
-    }
-
-    h6 { // Navigate & Explore titles
-        color: ${({ theme }) => theme.colors.palemint};
-        letter-spacing: 0.25em;
-        border-bottom: 1px solid ${({ theme }) => theme.colors.slategray};
-        margin: 0 0 1.5rem 0;
-        padding-bottom: 1.5rem;
-    }
-
-    a {
-        font-family: "IBM Plex Serif";
-        font-weight: normal;
-        font-size: 1.25em;
-        color: ${({ theme }) => theme.colors.palemint};
-        text-decoration: none;
-        line-height: 3rem;
-    }
-`
-*/
-
 export const FooterContent = styled.div`
     display: flex;
     gap: 8.375rem;
@@ -78,6 +47,7 @@ export const FooterContent = styled.div`
 
 export const StyledPractApp = styled.div`
     width: 45vw;
+    position: relative;
 
     @media (max-width: 800px) {
         display: none;
@@ -135,8 +105,8 @@ export const StyledExplore = styled.ul`
 export const Nav = styled.div`
     background-color: ${({ theme }) => theme.colors.darkestgreen};
     display: flex;
+    justify-content: space-between;
     margin: 0;
-    vertical-align: middle;
 
     @media (max-width: 800px) {
         padding: 2.5rem;
@@ -144,19 +114,8 @@ export const Nav = styled.div`
     
 `
 
-/*
-export const NavGrid = styled.nav`
-    background-color: ${({ theme }) => theme.colors.darkestgreen};
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-    padding: 2.5rem 0;
-    margin: 0;
-`
-*/
-
 export const StyledWhiteLogo = styled.div`
-    margin: 1.625rem 0;
+    margin: 1.625rem 0 1.625rem 12.625rem;
 
     @media (max-width: 800px) {
         margin: 0 0 4.5rem 0;
@@ -166,6 +125,8 @@ export const StyledWhiteLogo = styled.div`
 
 export const StyledContact = styled.div`
     display: flex;
+    vertical-align: middle;
+    margin: 2.5rem 14.688rem 0 0;
 
     h6 { // GET IN TOUCH
         border: none;
@@ -191,23 +152,6 @@ export const StyledContact = styled.div`
         @media (max-width: 800px) {
             margin: 0 0 2.5rem 0;
         }
-        
-        // vertical-align: middle;
-
-        /*
-
-        @media (max-width: 800px) {
-            border-right: 4px solid ${({ theme }) => theme.colors.gunmetalgray};
-            padding-right: 1.5rem;
-            margin-right: 1.5rem;
-        }
-
-        @media (max-width: 560px) {
-            border-right: 4px solid ${({ theme }) => theme.colors.gunmetalgray};
-            padding-right: 0.5rem;
-            margin-right: 0.5rem;
-        }
-        */
     }
 
     svg { // icons for email & phone
@@ -227,56 +171,44 @@ export const StyledContact = styled.div`
 // --- Motifs --- //
 
 export const SmX = styled.div`
-    grid-column-start: 1;
-    grid-column-end: 2;
-    position: relative;
+    position: absolute;
+    top: 35%;
 
     svg {
         height: 1.5vw;
-        margin-top: 9rem;
-        position: absolute;
-        right: 30%;
         width: 1.5vw;
     }
 `
 
 export const MedTealSquare = styled.div`
-    grid-column-start: 9;
-    grid-column-end: 10;
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
     
     div {
         background-color: ${({ theme }) => theme.colors.teal};
         height: 2.5vw;
         opacity: 0.5;
-        position: absolute;
         width: 2.5vw;
     }
 `
 
 export const OmbreSquares = styled.div`
-    grid-column-start: 8;
-    grid-column-end: 10;
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 25%;
 
     svg {
-        position: absolute;
-        margin-top: 5rem;
-        right: 25%;
         width: 6.67vw;
     }
 `
 
 export const WindowPanes = styled.div`
-    grid-column-start: 1;
-    grid-column-end: 2;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 
     svg {
-        bottom: 0;
         height: 3.75vw;
-        margin-bottom: -4.5rem;
-        position: absolute;
         width: 3.75vw;
     }
 `
