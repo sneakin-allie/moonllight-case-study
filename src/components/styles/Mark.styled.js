@@ -4,7 +4,7 @@ export const StyledMark = styled.div`
     margin: auto;
     width: 90vw;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1040px) {
         width: 100vw;
     }
 `

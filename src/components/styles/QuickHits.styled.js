@@ -18,7 +18,7 @@ export const StyledPara = styled.div`
         grid-column-end: 10;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1040px) {
         grid-column-start: 1;
         grid-column-end: 15;
     }
@@ -28,21 +28,23 @@ export const StyledPara = styled.div`
         margin: 0;
         border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
         padding: 0 0 13.5rem 19.5rem;
-        line-height: 4.25rem;
-
-        @media (max-width: 1600px) {
-            // padding: 0 0 9rem 15rem;
-        }
 
         @media (max-width: 1280px) {
-            // font-size: 2.75em;
-            // padding: 0 0 4.5rem 10.5rem;
+            font-size: 2.5em;
+            padding: 0 0 4.5rem 10.5rem;
         }
+
+        @media (max-width: 1040px) {
+            padding: 0 0 4.5rem 4.5rem;
+        }
+
+        /*
 
         @media (max-width: 800px) {
             font-size: 2.5em;
-            padding: 0 0 4.5rem 10.5rem; 
+            // padding: 0 0 4.5rem 10.5rem; SAME AS ABOVE
         }
+        */
     }
 `
 
@@ -54,8 +56,8 @@ export const StyledList = styled.div`
         grid-column-start: 11;
     }
 
-    @media (max-width: 800px) {
-        grid-column-start: 1;
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
         grid-column-end: 16;
         margin: auto;
         margin-top: 9rem;
@@ -89,11 +91,9 @@ export const StyledList = styled.div`
             color: ${({ theme }) => theme.colors.darkgreen};
             padding-right: 4.5rem;
 
-            /*
-            @media (max-width: 1280px) {
-                padding-right: 3.5rem;
+            @media (max-width: 1290px) {
+                padding-right: 3rem;
             }
-            */
         }
 
         li:first-child {
@@ -107,11 +107,9 @@ export const StyledList = styled.div`
             font-size: 1.5em;
             padding-left: 6.8rem;
 
-            /*
-            @media (max-width: 1280px) {
-                padding-left: 5.8rem;
+            @media (max-width: 1290px) {
+                padding-left: 5.3rem;
             }
-            */
         }
     }
 `

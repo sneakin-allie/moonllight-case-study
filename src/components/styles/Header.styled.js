@@ -30,7 +30,7 @@ export const StyledLogo = styled.div`
         margin: 0;
         vertical-align: middle;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1040px) {
             display: none;
         }
     }
@@ -93,6 +93,10 @@ export const ContentGrid = styled.div`
     grid-column-gap: 1.5rem;
     padding: 11.5rem 0 28rem 0;
 
+    @media (max-width: 1040px) {
+        padding: 11.5rem 0;
+    }
+
     h5 { // CASE STUDY
         border-bottom: 1px solid ${({ theme }) => theme.colors.silver};
         color: ${({ theme }) => theme.colors.slategray};
@@ -101,7 +105,7 @@ export const ContentGrid = styled.div`
         grid-column-end: 15;
         margin: 0;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1040px) {
             grid-column-start: 2;
             grid-column-end: 16;
         }
@@ -123,9 +127,14 @@ export const ContentGrid = styled.div`
         padding: 4.5rem 0 3.125rem 0;
         margin: 0;
 
+        @media (max-width: 1040px) {
+            font-size: 8em;
+            grid-column-start: 2;
+        }
+
         @media (max-width: 800px) {
             font-size: 5.5em;
-            grid-column-start: 2;
+            // grid-column-start: 2;
         }
 
         @media (max-width: 560px) {
@@ -141,6 +150,11 @@ export const ContentGrid = styled.div`
         grid-column-end: 14;
         line-height: 1.5em;
         padding: 0;
+
+        @media (max-width: 1040px) {
+            grid-column-start: 3;
+            grid-column-end: 15;
+        }
 
         @media (max-width: 800px) {
             grid-column-start: 2;

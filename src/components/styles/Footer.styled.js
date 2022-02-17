@@ -5,7 +5,7 @@ export const StyledFooter = styled.section`
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1040px) {
         flex-direction: column-reverse;
     }
     
@@ -39,17 +39,19 @@ export const FooterContent = styled.div`
     padding: 4.5rem;
 
     @media (max-width: 800px) {
-        justify-content: space-around;
-    }
+        gap: 2.5rem;
+    }    
 `
 
 // --- PRACTICAL APPLICATIONS --- //
 
 export const StyledPractApp = styled.div`
+    align-items: center;
+    display: flex;
     width: 45vw;
     position: relative;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1040px) {
         display: none;
     }
 
@@ -58,10 +60,11 @@ export const StyledPractApp = styled.div`
         font-family: "IBM Plex Serif";
         font-weight: 200;
         font-size: 9.375em;
-        line-height: 9.375rem;  
+        line-height: 9.375rem;
 
         @media (max-width: 1600px) {
-            font-size: 7em;
+            font-size: 7.5em;
+            line-height: 7.5rem;
         }
 
         @media (max-width: 1280px) {
@@ -76,12 +79,11 @@ export const StyledPractApp = styled.div`
 
 export const StyledNavigate = styled.ul`
     list-style-type: none;
-    width: 10vw;
+    width: 12vw;
     margin: 0;
     padding: 0;
 
-    @media (max-width: 800px) {
-        margin: 2.5rem;
+    @media (max-width: 1040px) {
         width: 50vw;
     }
 `
@@ -90,10 +92,9 @@ export const StyledExplore = styled.ul`
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 10vw;
+    width: 12vw;
 
-    @media (max-width: 800px) {
-        margin: 2.5rem;
+    @media (max-width: 1040px) {
         width: 50vw;
     }
 
@@ -108,25 +109,38 @@ export const Nav = styled.div`
     justify-content: space-between;
     margin: 0;
 
-    @media (max-width: 800px) {
-        padding: 2.5rem;
+    @media (max-width: 1040px) {
+        background-color: ${({ theme }) => theme.colors.darkgreen};
+        flex-direction: column;
     }
-    
 `
 
 export const StyledWhiteLogo = styled.div`
     margin: 1.625rem 0 1.625rem 12.625rem;
 
-    @media (max-width: 800px) {
-        margin: 0 0 4.5rem 0;
+    @media (max-width: 1600px) {
+        margin: 1.625rem 0 1.625rem 8.125rem;
     }
-    
+
+    @media (max-width: 1040px) {
+        line-height: 3rem;
+        margin: 4.5rem 0 0 4.5rem;
+    }
 `
 
 export const StyledContact = styled.div`
     display: flex;
-    vertical-align: middle;
     margin: 2.5rem 14.688rem 0 0;
+    vertical-align: middle;
+
+    @media (max-width: 1600px) {
+        margin: 2.5rem 10rem 0 0;
+    }
+
+    @media (max-width: 1040px) {
+        flex-direction: column;
+        margin: 0 0 0 4.5rem;
+    }
 
     h6 { // GET IN TOUCH
         border: none;
@@ -137,7 +151,7 @@ export const StyledContact = styled.div`
         padding: 0;
         vertical-align: middle;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1040px) {
             display: none;
         }
     }
@@ -149,8 +163,8 @@ export const StyledContact = styled.div`
         font-size: 1.25em;
         color: ${({ theme }) => theme.colors.palemint};
 
-        @media (max-width: 800px) {
-            margin: 0 0 2.5rem 0;
+        @media (max-width: 1040px) {
+            line-height: 3rem;
         }
     }
 
@@ -162,7 +176,7 @@ export const StyledContact = styled.div`
         margin-right: 0.5rem;
         vertical-align: middle;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1040px) {
             display: none;
         }
     }

@@ -6,6 +6,10 @@ export const StyledSteps = styled.section`
     grid-column-gap: 1.5rem;
     margin: 13.5rem 4.5rem;
 
+    @media (max-width: 1040px) {
+        margin: 9rem 4.5rem;
+    }
+
     @media (max-width: 800px) {
         margin: 4.5rem;
     }
@@ -19,9 +23,14 @@ export const StyledNum = styled.div`
         grid-column-start: 3;
     }
 
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+        grid-column-end: 16;
+    }
+
     @media (max-width: 800px) {
         grid-column-start: 1;
-        grid-column-end: 16;
+        grid-column-end: 17;
     }
 
     h5 { // Number
@@ -55,6 +64,11 @@ export const StyledContent = styled.div`
         grid-column-end: 15;
     }
 
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+        grid-column-end: 16;
+    }
+
     @media (max-width: 800px) {
         grid-column-start: 1;
         grid-column-end: 17;
@@ -62,7 +76,6 @@ export const StyledContent = styled.div`
 
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};
-        line-height: 4.5rem;
         margin: 0 0 1rem 0;
     }
 
