@@ -11,23 +11,20 @@ export const Cards = styled.div`
     gap: 8.375rem;
     justify-content: center;
     padding: 4.5rem;
+
+    @media (max-width: 1040px) {
+        flex-direction: column;
+        padding: 9rem;
+    }
 `
 
 export const ProductDiscoveryCard = styled.div`
     width: 28vw;
     // margin: 4.188rem;
-    /*
-    @media (max-width: 1280px) {
-        grid-column-start: 2;
-        grid-column-end: 9;
-    }
 
-    @media (max-width: 800px) {
-        grid-column-start: 2;
-        grid-column-end: 16;
-        margin-bottom: 9rem;
+    @media (max-width: 1040px) {
+        width: 100%;
     }
-    */
 
     h5 { 
         color: ${({ theme }) => theme.colors.silver};
@@ -82,6 +79,10 @@ export const ProductDiscoveryCard = styled.div`
 
 export const DevelopmentCard = styled.div`
     width: 28vw;
+
+    @media (max-width: 1040px) {
+        width: 100%;
+    }
 
     h5 { 
         color: ${({ theme }) => theme.colors.darkslategray};
@@ -185,8 +186,13 @@ export const StyledNotesForm = styled.div`
         width: 50vw;
     }
 
+    @media (max-width: 1040px) {
+        padding: 0 0 12rem 0;
+        width: 66vw;
+    }
+
     @media (max-width: 800px) {
-        width: 80vw;
+        width: 75vw;
     }
 
     h1 { // Let's Compare Notes

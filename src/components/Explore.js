@@ -5,9 +5,9 @@ import developing from "../assets/developing.jpg";
 export default function Explore() {
     return (
         <StyledExplore> 
+            {/* <h5>EXPLORE OUR OTHER SERVICES</h5> */}
             <Cards>
                 <ProductDiscoveryCard>
-                    <h5>EXPLORE OUR OTHER SERVICES</h5>
                     <img src={stickynotes} alt="brainstorming with sticky notes" />
                     <div>
                         <StyledNumber>
@@ -18,7 +18,6 @@ export default function Explore() {
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </ProductDiscoveryCard>
                 <DevelopmentCard>
-                    <h5>EXPLORE OUR OTHER SERVICES</h5>
                     <img src={developing} alt="developer working at a computer" />
                     <div>
                         <StyledNumber>
