@@ -7,7 +7,11 @@ export const StyledQuickHits = styled.section`
 
     @media (max-width: 800px) {
         margin-bottom: 0rem;
-    }    
+    }  
+
+    @media (max-width: 560px) {
+        grid-column-gap: 0;
+    } 
 `             
 
 export const StyledPara = styled.div`
@@ -38,13 +42,16 @@ export const StyledPara = styled.div`
             padding: 0 0 4.5rem 4.5rem;
         }
 
-        /*
-
         @media (max-width: 800px) {
-            font-size: 2.5em;
-            // padding: 0 0 4.5rem 10.5rem; SAME AS ABOVE
+            font-size: 2em;
+            line-height: 3rem;
         }
-        */
+
+        @media (max-width: 560px) {
+            font-size: 1.5em;
+            line-height: 2.5rem;
+            padding: 0 0 2.5rem 2.5rem;
+        }
     }
 `
 
@@ -58,14 +65,25 @@ export const StyledList = styled.div`
 
     @media (max-width: 1040px) {
         grid-column-start: 2;
-        grid-column-end: 16;
+        grid-column-end: 17;
         margin: auto;
         margin-top: 9rem;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-start: 1;
+        grid-column-end: 16;
+        margin-top: 4.5rem;
     }
 
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};
         margin: 0;
+
+        @media (max-width: 560px) {
+            font-size: 2em;
+            line-height: 3rem;
+        }
     }
 
     ol {
@@ -94,12 +112,22 @@ export const StyledList = styled.div`
             @media (max-width: 1290px) {
                 padding-right: 3rem;
             }
+
+            @media (max-width: 560px) {
+                padding-right: 2rem;
+            }
         }
 
         li:first-child {
             font-weight: bold;
             font-size: 1.875em;
             margin-top: 3rem;
+
+            @media (max-width: 560px) {
+                margin-top: 2.5rem;
+                font-size: 1.5em;
+                line-height: 2.5rem;
+            }
         }
 
         li:nth-child(1n + 2) {
@@ -109,6 +137,10 @@ export const StyledList = styled.div`
 
             @media (max-width: 1290px) {
                 padding-left: 5.3rem;
+            }
+
+            @media (max-width: 560px) {
+                padding-left: 3.8rem;
             }
         }
     }

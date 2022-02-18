@@ -40,7 +40,11 @@ export const FooterContent = styled.div`
 
     @media (max-width: 800px) {
         gap: 2.5rem;
-    }    
+    } 
+    
+    @media (max-width: 560px) {
+        padding: 2.5rem;
+    }
 `
 
 // --- PRACTICAL APPLICATIONS --- //
@@ -83,7 +87,17 @@ export const StyledNavigate = styled.ul`
     margin: 0;
     padding: 0;
 
+    a {
+        @media (max-width: 560px) {
+            font-size: 1em;
+        }
+    }
+
     @media (max-width: 1040px) {
+        width: 50vw;
+    }
+
+    @media (max-width: 560px) {
         width: 50vw;
     }
 `
@@ -94,14 +108,26 @@ export const StyledExplore = styled.ul`
     padding: 0;
     width: 12vw;
 
+    a {
+        @media (max-width: 560px) {
+            font-size: 1em;
+        }
+    }
+
     @media (max-width: 1040px) {
         width: 50vw;
     }
 
     svg {
         padding-right: 1rem;
+
+        @media (max-width: 560px) {
+            display: none;
+        }
     }
 `
+
+// --- Footer Nav Bar --- //
 
 export const Nav = styled.div`
     background-color: ${({ theme }) => theme.colors.darkestgreen};
@@ -126,6 +152,10 @@ export const StyledWhiteLogo = styled.div`
         line-height: 3rem;
         margin: 4.5rem 0 0 4.5rem;
     }
+
+    @media (max-width: 560px) {
+        margin: 2.5rem 0 0 2.5rem;
+    }
 `
 
 export const StyledContact = styled.div`
@@ -140,6 +170,10 @@ export const StyledContact = styled.div`
     @media (max-width: 1040px) {
         flex-direction: column;
         margin: 0 0 0 4.5rem;
+    }
+
+    @media (max-width: 560px) {
+        margin: 0 0 0 2.5rem;
     }
 
     h6 { // GET IN TOUCH
@@ -188,6 +222,10 @@ export const SmX = styled.div`
     position: absolute;
     top: 35%;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         height: 1.5vw;
         width: 1.5vw;
@@ -198,6 +236,10 @@ export const MedTealSquare = styled.div`
     position: absolute;
     right: 0;
     top: 0;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
     
     div {
         background-color: ${({ theme }) => theme.colors.teal};
@@ -212,6 +254,10 @@ export const OmbreSquares = styled.div`
     right: 0;
     top: 25%;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         width: 6.67vw;
     }
@@ -220,6 +266,10 @@ export const OmbreSquares = styled.div`
 export const WindowPanes = styled.div`
     position: absolute;
     bottom: 0;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 
     svg {
         height: 3.75vw;

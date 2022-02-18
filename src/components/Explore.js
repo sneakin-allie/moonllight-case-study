@@ -1,11 +1,13 @@
-import { Cards, ProductDiscoveryCard, DevelopmentCard, StyledExplore, StyledNotesForm, StyledNumber } from "./styles/Explore.styled";
+import { Cards, ProductDiscoveryCard, DevelopmentCard, StyledExplore, StyledNotesForm, StyledNumber, ExploreTitle } from "./styles/Explore.styled";
 import stickynotes from "../assets/stickynotes.jpg";
 import developing from "../assets/developing.jpg";
 
 export default function Explore() {
     return (
         <StyledExplore> 
-            {/* <h5>EXPLORE OUR OTHER SERVICES</h5> */}
+            <ExploreTitle>
+                <h5>EXPLORE OUR OTHER SERVICES</h5>
+            </ExploreTitle>
             <Cards>
                 <ProductDiscoveryCard>
                     <img src={stickynotes} alt="brainstorming with sticky notes" />

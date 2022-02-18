@@ -1,35 +1,41 @@
 import styled from "styled-components";
 
 export const StyledProjectGoalsImages = styled.section`
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 1.5rem;
-    padding: 0;
-    margin: 9rem 4.5rem 0 4.5rem;
+    display: flex;
 
     @media (max-width: 1040px) {
-        grid-column-start: 3;
-        grid-column-end: 15; 
-        padding-bottom: 4.5rem;
+        margin: 0 4.5rem;
+        gap: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 560px) {
+        margin: 0 2.5rem;
     }
 `
 export const StyledImageOne = styled.div`
-    grid-column-start: 2;
-    grid-column-end: 8; 
+    margin: 0 4.188rem 0 12.625rem;
+
+    @media (max-width: 1280px) {
+        margin: 0 2.094rem 0 6.313rem;
+    }
 
     @media (max-width: 1040px) {
-        grid-column-start: 1;
-        grid-column-end: 9; 
+        margin: 0;
     }
 `
 
 export const StyledImageTwo = styled.div`
-    grid-column-start: 9;
-    grid-column-end: 17;
-    margin-top: 7rem;
+    margin: 7rem 5.875rem 0 4.188rem;
 
-    @media (max-width: 1040px) {
-        margin-top: 0; 
+    @media (max-width: 1280px) {
+        margin: 7rem 2.875rem 0 2.094rem;
     }
 
+    @media (max-width: 1040px) {
+        margin: 0;
+    }
 `

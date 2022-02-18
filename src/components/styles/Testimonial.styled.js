@@ -10,6 +10,10 @@ export const WhiteBGGrid = styled.div`
     grid-column-gap: 1.5rem;
     padding: 0 4.5rem;
     position: relative;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 `
 
 export const GreenBGGrid = styled.div`
@@ -20,7 +24,8 @@ export const GreenBGGrid = styled.div`
     padding: 0 4.5rem;
 
     @media (max-width: 560px) {
-        padding: 0 3rem;
+        grid-column-gap: 0;
+        padding: 0;
     }
 `
 
@@ -30,6 +35,10 @@ export const Quotation = styled.svg`
     background-color: ${({ theme }) => theme.colors.mint};
     padding: 2.4vw 2.1vw;
     width: 2.5vw;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 `
 
 export const StyledQuote = styled.div`
@@ -45,12 +54,15 @@ export const StyledQuote = styled.div`
     }
 
     @media (max-width: 800px) {
+        border: none;
         grid-column-start: 2;
         grid-column-end: 16;
+        padding-left: 0rem;
+        text-align: center;
     }
 
     @media (max-width: 560px) {
-        padding-left: 3rem;
+        padding: 0;
     }
 
     h2 { // "Our partnership..."
@@ -60,8 +72,8 @@ export const StyledQuote = styled.div`
         padding-top: 4.5rem;
 
         @media (max-width: 800px) {
-            font-size: 2.5em;
-            line-height: 3.75rem;
+            font-size: 2em;
+            line-height: 3rem;
         }
 
         @media (max-width: 560px) {
@@ -84,12 +96,14 @@ export const StyledClient = styled.div`
     }
 
     @media (max-width: 800px) {
-        grid-column-start: 2;
-        padding-left: 4rem;
+        border: none;
+        grid-column-start: 1;
+        padding-left: 0;
+        text-align: center;
     }
 
     @media (max-width: 560px) {
-        padding-left: 3rem;
+        padding-left: 0;
     }
 
     h5 { // Jason & Founder
@@ -113,6 +127,10 @@ export const GrayLines = styled.div`
     grid-column-end: 5;
     position: relative;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         bottom: 0;
         height: 6.67vw;
@@ -127,6 +145,10 @@ export const DarkGreenSquare = styled.div`
     grid-column-end: 10; 
     position: relative;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     div {
         background-color: ${({ theme }) => theme.colors.darkgreen};
         bottom: 0;
@@ -140,6 +162,10 @@ export const LgMintSquare = styled.div`
     grid-column-start: 12;
     grid-column-end: 14;
     position: relative;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 
     div {
         background-color: ${({ theme }) => theme.colors.mint};
@@ -159,6 +185,10 @@ export const WhiteLines = styled.div`
     @media (max-width: 800px) {
         padding: 9rem 0 2.5rem 0;
     }
+
+    @media (max-width: 560px) {
+        display: none;
+    }
     
     svg {
         height: 6.67vw;
@@ -171,6 +201,10 @@ export const ThreeSquares = styled.div`
     grid-column-end: 14;
     position: relative;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         position: absolute;
         top: 50%;
@@ -182,6 +216,10 @@ export const SmSquareShadow = styled.div`
     grid-column-start: 12;
     grid-column-end: 13;
     position: relative;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 
     svg {
         height: 1vw;
@@ -197,6 +235,10 @@ export const OmbreSquares = styled.div`
     grid-column-end: 9;
     position: relative;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         margin-top: 8.28vw;
         position: absolute;
@@ -209,6 +251,10 @@ export const LgPaleMintSquare = styled.div`
     grid-column-start: 13;
     grid-column-end: 15;
     position: relative;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 
     div {
         background-color: ${({ theme }) => theme.colors.mint};
@@ -225,6 +271,10 @@ export const FiveSquares = styled.div`
     grid-column-end: 10;
     position: relative;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         height: 2.5vw;
         margin-top: -2.25vw;
@@ -238,6 +288,10 @@ export const WindowPanes = styled.div`
     grid-column-end: 14;
     position: relative;
 
+    @media (max-width: 560px) {
+        display: none;
+    }
+
     svg {
         height: 3.75vw;
         margin-top: -3vw;
@@ -249,6 +303,10 @@ export const WindowPanes = styled.div`
 export const SmGreenSquare = styled.div`
     grid-column-start: 10;
     grid-column-end: 11;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 
     div {
         background-color: ${({ theme }) => theme.colors.limegreen};
@@ -262,6 +320,10 @@ export const X = styled.div`
     grid-column-start: 6;
     grid-column-end: 7;
     position: relative;
+
+    @media (max-width: 560px) {
+        display: none;
+    }
 
     svg {
         height: 1.25vw;
@@ -277,6 +339,10 @@ export const WhiteSquaresX = styled.div`
 
     @media (max-width: 800px) {
         padding: 2.5rem 0 9rem 0;
+    }
+
+    @media (max-width: 560px) {
+        display: none;
     }
 
     svg {

@@ -37,15 +37,8 @@ export const StyledResults = styled.section`
         }
 
         @media (max-width: 800px) {
+            font-size: 3em;
             grid-column-start: 4;
-        }
-
-        @media (max-width: 800px) {
-            font-size: 3.5em;
-        }
-
-        @media (max-width: 560px) {
-            font-size: 3.25em;
         }
     }
 
@@ -72,33 +65,9 @@ export const StyledResults = styled.section`
         }
 
         @media (max-width: 800px) {
+            font-size: 2em;
             grid-column-start: 4;
-        }
-
-        @media (max-width: 560px) {
-            font-size: 2.25em;
-            line-height: 4rem;
+            line-height: 3rem;
         }
     }
-
-    div {
-        
-        grid-column-start: 6;
-        grid-column-end: 17;
-        padding-bottom: 13.5rem;
-
-        @media (max-width: 1280px) {
-            grid-column-start: 5;
-            padding-bottom: 9rem;
-        }
-
-        @media (max-width: 800px) {
-            grid-column-start: 4;
-        }
-
-        @media (max-width: 560px) {
-            padding-bottom: 4.5rem;
-        }
-    }
-
 `;

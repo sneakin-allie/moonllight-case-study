@@ -4,6 +4,25 @@ export const StyledExplore = styled.section`
     background-color: ${({ theme }) => theme.colors.darkslategray};
 `
 
+export const ExploreTitle = styled.div`
+    padding: 9rem 0 4.5rem 0;
+    margin: 0;
+
+    @media (max-width: 800px) {
+        padding: 4.5rem 4.5rem 0 4.5rem;
+    }
+
+    h5 { 
+        color: ${({ theme }) => theme.colors.silver};
+        letter-spacing: 0.25em;
+        margin: 0;
+
+        @media (max-width: 800px) {
+            font-size: 1.25em;
+        }
+    }
+`
+
 // --- Cards ---//
 
 export const Cards = styled.div`
@@ -16,6 +35,10 @@ export const Cards = styled.div`
         flex-direction: column;
         padding: 9rem;
     }
+
+    @media (max-width: 800px) {
+        padding: 4.5rem 4.5rem 9rem 4.5rem;
+    }
 `
 
 export const ProductDiscoveryCard = styled.div`
@@ -24,13 +47,6 @@ export const ProductDiscoveryCard = styled.div`
 
     @media (max-width: 1040px) {
         width: 100%;
-    }
-
-    h5 { 
-        color: ${({ theme }) => theme.colors.silver};
-        letter-spacing: 0.25em;
-        margin: 9rem 0 4.5rem 0;
-        padding: 0;
     }
 
     img {
@@ -82,13 +98,6 @@ export const DevelopmentCard = styled.div`
 
     @media (max-width: 1040px) {
         width: 100%;
-    }
-
-    h5 { 
-        color: ${({ theme }) => theme.colors.darkslategray};
-        letter-spacing: 0.25em;
-        margin: 9rem 0 4.5rem 0;
-        padding: 0;
     }
 
     img {
@@ -200,11 +209,16 @@ export const StyledNotesForm = styled.div`
         margin: 0;
 
         @media (max-width: 1280px) {
-            font-size: 3.2rem;
+            font-size: 3.2em;
         }
 
         @media (max-width: 800px) {
-            font-size: 2.3rem;
+            font-size: 2.3em;
+        }
+
+        @media (max-width: 560px) {
+            font-size: 2em;
+            line-height: 2.5rem;
         }
     }
 
@@ -259,5 +273,9 @@ export const StyledNotesForm = styled.div`
         margin-top: 2.5rem; 
         padding: 0 1.5rem;
         width: 19.125rem;
+
+        @media (max-width: 560px) {
+            width: 50vw;
+        }
     }
 `

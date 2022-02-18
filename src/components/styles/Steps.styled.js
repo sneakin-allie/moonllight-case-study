@@ -11,7 +11,11 @@ export const StyledSteps = styled.section`
     }
 
     @media (max-width: 800px) {
-        margin: 4.5rem;
+        margin: 9rem 2.5rem;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-gap: 0;
     }
 `
 
@@ -47,9 +51,15 @@ export const StyledNum = styled.div`
         color: ${({ theme }) => theme.colors.darkgreen};
         margin: 1.5rem 0 4.5rem 0;
 
+        @media (max-width: 800px) {
+            font-size: 3em;
+            line-height: 4.25rem;
+        }
+
         /*
-        @media (max-width: 1280px) {
-            font-size: 3.5em;
+        @media (max-width: 560px) {
+            font-size: 2em;
+            line-height: 2.5rem;
         }
         */
     }
@@ -77,6 +87,11 @@ export const StyledContent = styled.div`
     h3 {
         color: ${({ theme }) => theme.colors.darkgreen};
         margin: 0 0 1rem 0;
+
+        @media (max-width: 800px) {
+            font-size: 2em;
+            line-height: 2.5rem;
+        }
     }
 
     p {

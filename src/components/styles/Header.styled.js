@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const StyledHeader = styled.section`
     background-color: ${({ theme }) => theme.colors.darkgreen};
     padding: 0 4.5rem; 
+
+    @media (max-width: 800px) {
+        padding: 0 2.5rem;
+    }
+
+    @media (max-width: 560px) {
+        padding: 0 2rem;
+    }
 `;
 
 export const StyledNav = styled.nav`
@@ -49,6 +57,22 @@ export const StyledLinks = styled.div`
         flex-direction: column;
     }
 
+    @media (max-width: 560px) {
+        padding: 0;
+    }
+
+    div {
+        width: 10vw;
+    }
+
+    svg {
+        color: white;
+
+        @media (min-width: 561px) {
+            display: none;
+        }
+    }
+
     a:nth-child(2) {
         padding: 0 1rem 0 2rem;
 
@@ -84,6 +108,10 @@ export const StyledLinks = styled.div`
             text-decoration: none;
             color: white;
         }
+
+        @media (max-width: 560px) {
+            display: none;
+        }
     }
 `
 
@@ -95,6 +123,10 @@ export const ContentGrid = styled.div`
 
     @media (max-width: 1040px) {
         padding: 11.5rem 0;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-gap: 0;
     }
 
     h5 { // CASE STUDY
@@ -110,9 +142,12 @@ export const ContentGrid = styled.div`
             grid-column-end: 16;
         }
 
-        @media (max-width: 560px) {
+        @media (max-width: 800px) {
             grid-column-start: 1;
-            grid-column-end: 17;
+        }
+
+        @media (max-width: 560px) {
+            font-size: 1em;
         }
 
     } // border line needs work
@@ -133,13 +168,13 @@ export const ContentGrid = styled.div`
         }
 
         @media (max-width: 800px) {
-            font-size: 5.5em;
-            // grid-column-start: 2;
+            font-size: 5em;
+            grid-column-start: 1;
         }
 
         @media (max-width: 560px) {
+            font-size: 3em;
             grid-column-start: 1;
-            font-size: 4.5em;
         }
     }
 
@@ -157,13 +192,13 @@ export const ContentGrid = styled.div`
         }
 
         @media (max-width: 800px) {
-            grid-column-start: 2;
-            grid-column-end: 16;
+            grid-column-start: 1;
+            grid-column-end: 17;
+            font-size: 1.5em;
         }
 
         @media (max-width: 560px) {
-            grid-column-start: 3;
-            font-size: 1.75em;
+            font-size: 1em;
         }
     }
 `
