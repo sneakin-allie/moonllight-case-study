@@ -92,6 +92,10 @@ export const StyledNavigate = styled.ul`
     padding: 0;
 
     a {
+        :hover, :focus {
+            color: ${({ theme }) => theme.colors.limegreen};
+        }
+
         @media (max-width: 560px) {
             font-size: 1em;
         }
@@ -113,6 +117,10 @@ export const StyledExplore = styled.ul`
     width: 12vw;
 
     a {
+        :hover, :focus {
+            color: ${({ theme }) => theme.colors.limegreen};
+        }
+
         @media (max-width: 560px) {
             font-size: 1em;
         }

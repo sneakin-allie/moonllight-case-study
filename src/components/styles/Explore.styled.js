@@ -19,7 +19,6 @@ export const TitleAndCardGrid = styled.div`
 export const ExploreTitle = styled.div`
     grid-column-start: 3;
     grid-column-end: 16;
-    // padding: 0;
     margin: 9rem 0 0.5rem 4rem;
 
     @media (max-width: 1730px) {
@@ -48,12 +47,6 @@ export const ExploreTitle = styled.div`
     @media (max-width: 560px) {
         grid-column-start: 1;
     }
-
-    /*
-    @media (max-width: 800px) {
-        padding: 4.5rem 4.5rem 0 4.5rem;
-    }
-    */
 
     h5 { 
         color: ${({ theme }) => theme.colors.silver};
@@ -351,7 +344,13 @@ export const StyledNotesForm = styled.div`
         letter-spacing: 0.25em;
         margin-top: 2.5rem; 
         padding: 0 1.5rem;
+        transition: font-size 3s ease-in;
         width: 19.125rem;
+
+        :hover {
+            cursor: pointer;
+            font-size: 1.5em;
+        }
 
         @media (max-width: 560px) {
             width: 50vw;
