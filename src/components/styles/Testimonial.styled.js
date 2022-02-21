@@ -25,7 +25,7 @@ export const GreenBGGrid = styled.div`
 
     @media (max-width: 560px) {
         grid-column-gap: 0;
-        padding: 0;
+        padding-bottom: 4.5rem;
     }
 `
 

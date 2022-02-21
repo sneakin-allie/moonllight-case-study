@@ -4,20 +4,63 @@ export const StyledExplore = styled.section`
     background-color: ${({ theme }) => theme.colors.darkslategray};
 `
 
-export const ExploreTitle = styled.div`
-    padding: 9rem 0 4.5rem 0;
-    margin: 0;
+export const TitleAndCardGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-column-gap: 1.5rem;
+    padding: 0 4.5rem;
 
+    @media (max-width: 800px) {
+        grid-column-gap: 0;
+        padding: 0 2.5rem;
+    }
+`
+
+export const ExploreTitle = styled.div`
+    grid-column-start: 3;
+    grid-column-end: 16;
+    // padding: 0;
+    margin: 9rem 0 0.5rem 4rem;
+
+    @media (max-width: 1730px) {
+        margin: 9rem 0 1.5rem 2.5rem;
+    }
+
+    @media (max-width: 1600px) {
+        grid-column-start: 2;
+        margin: 9rem 0 2rem 2.5rem;
+    }
+
+    @media (max-width: 1280px) {
+        grid-column-start: 1;
+        margin: 9rem 0 2rem 2.5rem;
+    }
+
+    @media (max-width: 1040px) {
+        grid-column-start: 3;
+        margin: 9rem 0 0 0;
+    }
+
+    @media (max-width: 800px) {
+        grid-column-start: 2;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-start: 1;
+    }
+
+    /*
     @media (max-width: 800px) {
         padding: 4.5rem 4.5rem 0 4.5rem;
     }
+    */
 
     h5 { 
         color: ${({ theme }) => theme.colors.silver};
         letter-spacing: 0.25em;
         margin: 0;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1040px) {
             font-size: 1.25em;
         }
     }
@@ -25,59 +68,44 @@ export const ExploreTitle = styled.div`
 
 // --- Cards ---//
 
-export const Cards = styled.div`
-    display: flex;
-    gap: 8.375rem;
-    justify-content: center;
-    padding: 4.5rem;
+export const ProductDiscoveryCard = styled.div`
+    grid-column-start: 3;
+    grid-column-end: 9;
+    margin: 4rem;
+
+    @media (max-width: 1730px) {
+        margin: 2.5rem;
+    }
+
+    @media (max-width: 1600px) {
+        grid-column-start: 2;
+    }
+
+    @media (max-width: 1280px) {
+        grid-column-start: 1;
+    }
 
     @media (max-width: 1040px) {
-        flex-direction: column;
-        padding: 9rem;
+        grid-column-start: 3;
+        grid-column-end: 15;
+        margin: 4.5rem 0 4.5rem 0;
     }
 
     @media (max-width: 800px) {
-        padding: 4.5rem 4.5rem 9rem 4.5rem;
+        grid-column-start: 2;
+        grid-column-end: 16;
     }
-`
 
-export const ProductDiscoveryCard = styled.div`
-    width: 28vw;
-    // margin: 4.188rem;
-
-    @media (max-width: 1040px) {
-        width: 100%;
+    @media (max-width: 560px) {
+        grid-column-start: 1;
+        grid-column-end: 17;
     }
 
     img {
         margin-bottom: 3rem;
-    }
-
-    div {
-        margin: auto;
-        vertical-align: middle;
-    }
-
-    h3 {
-        color: white;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 0 0 1.5rem;
-
-        @media (max-width: 1600px) {
-            font-size: 2.3em;
-        }
-
-        @media (max-width: 1280px) {
-            font-size: 2em;
-        }
-
-        @media (max-width: 800px) {
-            font-size: 1.8em;
-        }
 
         @media (max-width: 560px) {
-            font-size: 1.5em;
+            margin-bottom: 2rem;
         }
     }
 
@@ -90,45 +118,53 @@ export const ProductDiscoveryCard = styled.div`
         line-height: 2.5rem;
         margin: 2rem 0 0 0;
         padding-bottom: 3rem;
+
+        @media (max-width: 560px) {
+            font-size: 1.25em;
+            line-height: 2.25rem;
+            margin: 1rem 0 0 0;
+        }
     }
 `
 
 export const DevelopmentCard = styled.div`
-    width: 28vw;
+    grid-column-start: 9;
+    grid-column-end: 15;
+    margin: 4rem;
+
+    @media (max-width: 1730px) {
+        margin: 2.5rem;
+    }
+
+    @media (max-width: 1600px) {
+        grid-column-end: 16;
+    }
+
+    @media (max-width: 1280px) {
+        grid-column-end: 17;
+    }
 
     @media (max-width: 1040px) {
-        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 15;
+        margin: 0 0 9rem 0;
+    }
+
+    @media (max-width: 800px) {
+        grid-column-start: 2;
+        grid-column-end: 16;
+    }
+
+    @media (max-width: 560px) {
+        grid-column-start: 1;
+        grid-column-end: 17;
     }
 
     img {
         margin-bottom: 3rem;
-    }
-
-    div {
-        margin: auto;
-        vertical-align: middle;
-    }
-
-    h3 {
-        color: white;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 0 0 1.5rem;
-
-        @media (max-width: 1600px) {
-            font-size: 2.3em;
-        }
-
-        @media (max-width: 1280px) {
-            font-size: 2em;
-        }
-
-        @media (max-width: 800px) {
-            font-size: 1.8em;
-        }
 
         @media (max-width: 560px) {
-            font-size: 1.5em;
+            margin-bottom: 2rem;
         }
     }
 
@@ -141,45 +177,71 @@ export const DevelopmentCard = styled.div`
         line-height: 2.5rem;
         margin: 2rem 0 0 0;
         padding-bottom: 3rem;
+
+        @media (max-width: 560px) {
+            font-size: 1.25em;
+            line-height: 2.25rem;
+            margin: 1rem 0 0 0;
+        }
     }
 `
 
-export const StyledNumber = styled.div`
-    background-color: ${({ theme }) => theme.colors.mint};
-    display: inline-block;
-    font-family: 'Space Grotesk';
-    font-size: 1.5em;
-    font-weight: normal;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    margin: 0;
-    text-align: center;
-    width: 4.5rem;  
+export const CardNumberAndTitle = styled.div`
 
-    @media (max-width: 1600px) {
-        height: 4rem;
-        line-height: 4rem;
-        width: 4rem;
+    div {
+        background-color: ${({ theme }) => theme.colors.mint};
+        display: inline-block;
+        font-family: 'Space Grotesk';
+        font-size: 1.5em;
+        font-weight: normal;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        width: 4.5rem;
+
+        @media (max-width: 1600px) {
+            height: 4rem;
+            line-height: 4rem;
+            width: 4rem;
+        }
+
+        @media (max-width: 1280px) {
+            font-size: 1.25em;
+            height: 3.5rem;
+            line-height: 3.5rem;
+            width: 3.5rem;
+        }
+
+        @media (max-width: 560px) {
+            font-size: 1.25em;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            width: 2.5rem;
+        }
     }
 
-    @media (max-width: 1280px) {
-        height: 3.5rem;
-        line-height: 3.5rem;
-        width: 3.5rem;
-    }
+    h3 {
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 1.5rem;
 
-    @media (max-width: 800px) {
-        font-size: 1.3em;
-        height: 3rem;
-        line-height: 3rem;
-        width: 3rem;
-    }
+        @media (max-width: 1730px) {
+            font-size: 2.25em;
+        }
 
-    @media (max-width: 560px) {
-        font-size: 1em;
-        height: 2.5rem;
-        line-height: 2.5rem;
-        width: 2.5rem;
+        @media (max-width: 1600px) {
+            font-size: 2em;
+        }
+
+        @media (max-width: 1600px) {
+            font-size: 1.875em;
+        }
+
+        @media (max-width: 560px) {
+            font-size: 1.25em;
+            margin: 0 0 0 1rem;
+        }
     }
 `
 
@@ -190,6 +252,18 @@ export const StyledNotesForm = styled.div`
     margin-right: auto;
     padding: 12rem 0;
     width: 33vw;
+
+    @media (max-width: 1815px) {
+        width: 35vw;
+    }
+
+    @media (max-width: 1710px) {
+        width: 40vw;
+    }
+
+    @media (max-width: 1600px) {
+        width: 45vw;
+    }
 
     @media (max-width: 1280px) {
         width: 50vw;
@@ -208,16 +282,16 @@ export const StyledNotesForm = styled.div`
         color: white;
         margin: 0;
 
-        @media (max-width: 1280px) {
-            font-size: 3.2em;
+        @media (max-width: 1600px) {
+            font-size: 3em;
         }
 
         @media (max-width: 800px) {
-            font-size: 2.3em;
+            font-size: 2.5em;
         }
 
         @media (max-width: 560px) {
-            font-size: 2em;
+            font-size: 1.5em;
             line-height: 2.5rem;
         }
     }
@@ -229,6 +303,11 @@ export const StyledNotesForm = styled.div`
         font-weight: normal;
         line-height: 2.5rem;
         margin: 2.25rem 0 3.313rem 0;
+
+        @media (max-width: 560px) {
+            font-size: 1.25em;
+            line-height: 2.25rem;
+        }
     }
 
     label {

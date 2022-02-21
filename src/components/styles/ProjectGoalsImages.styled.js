@@ -25,6 +25,12 @@ export const StyledImageOne = styled.div`
 
     @media (max-width: 1040px) {
         margin: 0;
+        width: 50vw;
+    }
+
+    @media (max-width: 800px) {
+        margin: auto;
+        width: 100%;
     }
 `
 
@@ -37,5 +43,11 @@ export const StyledImageTwo = styled.div`
 
     @media (max-width: 1040px) {
         margin: 0;
+        width: 50vw;
+    }
+
+    @media (max-width: 800px) {
+        margin: auto;
+        width: 100%;
     }
 `

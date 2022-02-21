@@ -20,7 +20,11 @@ export const StyledPremise = styled.section`
 export const StyledTitle = styled.div`
     grid-column-start: 4;
     grid-column-end: 13;
-    // margin-bottom: 1.125rem; Might not need this if line height is in global
+
+    @media (max-width: 1040px) {
+        grid-column-start: 2;
+        grid-column-end: 16;
+    }
 
     @media (max-width: 1040px) {
         grid-column-start: 2;
@@ -39,6 +43,10 @@ export const StyledTitle = styled.div`
         color: ${({ theme }) => theme.colors.darkgreen};
         margin: 0;
         padding: 0;
+
+        @media (max-width: 1280px) {
+            font-size: 5em;
+        }
 
         @media (max-width: 1040px) {
             font-size: 3.75em;

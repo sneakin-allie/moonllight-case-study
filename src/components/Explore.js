@@ -1,35 +1,31 @@
-import { Cards, ProductDiscoveryCard, DevelopmentCard, StyledExplore, StyledNotesForm, StyledNumber, ExploreTitle } from "./styles/Explore.styled";
+import { StyledExplore, TitleAndCardGrid, ExploreTitle, ProductDiscoveryCard, DevelopmentCard, CardNumberAndTitle, StyledNotesForm } from "./styles/Explore.styled";
 import stickynotes from "../assets/stickynotes.jpg";
 import developing from "../assets/developing.jpg";
 
 export default function Explore() {
     return (
-        <StyledExplore> 
-            <ExploreTitle>
-                <h5>EXPLORE OUR OTHER SERVICES</h5>
-            </ExploreTitle>
-            <Cards>
+        <StyledExplore>
+            <TitleAndCardGrid>
+                <ExploreTitle>
+                    <h5>EXPLORE OUR OTHER SERVICES</h5>
+                </ExploreTitle>
                 <ProductDiscoveryCard>
                     <img src={stickynotes} alt="brainstorming with sticky notes" />
-                    <div>
-                        <StyledNumber>
-                            01
-                        </StyledNumber>
+                    <CardNumberAndTitle>
+                        <div>01</div>
                         <h3>Product Discovery</h3>
-                    </div>
+                    </CardNumberAndTitle>
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </ProductDiscoveryCard>
                 <DevelopmentCard>
                     <img src={developing} alt="developer working at a computer" />
-                    <div>
-                        <StyledNumber>
-                            03
-                        </StyledNumber>
+                    <CardNumberAndTitle>
+                        <div>03</div>
                         <h3>Development</h3>
-                    </div>    
+                    </CardNumberAndTitle>   
                     <p>Custom software is possibility. Determining what to build (and what not to build) makes or breaks the final delivery.</p>
                 </DevelopmentCard>
-            </Cards>
+            </TitleAndCardGrid> 
             <StyledNotesForm>
                 <h1>Let's Compare Notes</h1>
                 <p>We're always looking for a chance to talk shop. Even if we're not the right fit today, we'll be your go-to resource whenever new questions pop up.</p>

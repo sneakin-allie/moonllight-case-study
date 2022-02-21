@@ -56,12 +56,10 @@ export const StyledNum = styled.div`
             line-height: 4.25rem;
         }
 
-        /*
         @media (max-width: 560px) {
-            font-size: 2em;
-            line-height: 2.5rem;
+            font-size: 2.5em;
+            line-height: 3rem;
         }
-        */
     }
 `
 

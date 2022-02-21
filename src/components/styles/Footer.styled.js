@@ -38,6 +38,10 @@ export const FooterContent = styled.div`
     justify-content: center;
     padding: 4.5rem;
 
+    @media (max-width: 1280px) {
+        gap: 4.5rem;
+    }
+
     @media (max-width: 800px) {
         gap: 2.5rem;
     } 
@@ -165,6 +169,10 @@ export const StyledContact = styled.div`
 
     @media (max-width: 1600px) {
         margin: 2.5rem 10rem 0 0;
+    }
+
+    @media (max-width: 1280px) {
+        margin: 2.5rem 4.5rem 0 0;
     }
 
     @media (max-width: 1040px) {

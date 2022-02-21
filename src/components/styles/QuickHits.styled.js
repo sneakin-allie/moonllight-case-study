@@ -33,12 +33,12 @@ export const StyledPara = styled.div`
         border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
         padding: 0 0 13.5rem 19.5rem;
 
-        @media (max-width: 1280px) {
-            font-size: 2.5em;
+        @media (max-width: 1600px) {
             padding: 0 0 4.5rem 10.5rem;
         }
 
-        @media (max-width: 1040px) {
+        @media (max-width: 1280px) {
+            font-size: 2.5em;
             padding: 0 0 4.5rem 4.5rem;
         }
 
