@@ -61,14 +61,6 @@ export const StyledLinks = styled.div`
         padding: 0;
     }
 
-    a {
-        transition: all 1s ease-out;
-        :hover, :focus {
-            font-size: 1.5em;
-            color: ${({ theme }) => theme.colors.limegreen};
-        }
-    }
-
     div {
         width: 10vw;
     }
@@ -111,11 +103,6 @@ export const StyledLinks = styled.div`
         font-size: 0.875em;
         color: white;
         text-decoration: none;
-
-        &:visited {
-            text-decoration: none;
-            color: white;
-        }
 
         @media (max-width: 560px) {
             display: none;

@@ -30,8 +30,20 @@ export const StyledPara = styled.div`
     h2 {
         color: ${({ theme }) => theme.colors.darkgreen};
         margin: 0;
-        border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
+        // border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
         padding: 0 0 13.5rem 19.5rem;
+
+        /*
+        animation-name: fadein;
+        animation-duration: 5s;
+
+        :hover, :focus {
+            @keyframes fadein {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+        }
+        */
 
         @media (max-width: 1600px) {
             padding: 0 0 4.5rem 10.5rem;
@@ -51,6 +63,17 @@ export const StyledPara = styled.div`
             font-size: 1.5em;
             line-height: 2.5rem;
             padding: 0 0 2.5rem 2.5rem;
+        }
+    }
+
+    div {
+        border-bottom: 2px solid ${({ theme }) => theme.colors.silver};
+        animation-name: growline;
+        animation-duration: 5s;
+
+        @keyframes growline {
+            from{ transform: translateX(100%) }
+            to{ transform: translateX(0) }
         }
     }
 `

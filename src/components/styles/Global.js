@@ -62,6 +62,15 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
     }
 
+    a {
+        transition: all 1s ease-out;
+        :hover, :focus {
+            color: ${({ theme }) => theme.colors.limegreen};
+            font-size: 1.5em;
+            text-decoration-line: underline;
+        }
+    }
+
 `;
 
 export default GlobalStyles;

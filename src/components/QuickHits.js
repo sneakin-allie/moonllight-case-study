@@ -5,6 +5,7 @@ export default function QuickHits() {
         <StyledQuickHits>
             <StyledPara>
                 <h2>The start of the (real-life) season loomed large, requiring a partnership that carefully balanced features, budget, and speed.</h2>
+                <div></div>
             </StyledPara>
             <StyledList>
                 <h3>Our Quick Hits</h3>

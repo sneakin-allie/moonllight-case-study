@@ -4,20 +4,12 @@ export const StyledHeroImage = styled.div`
     margin: auto;
     margin-top: -18.75rem;
     width: 80vw;
+    animation-name: moveimage;
+    animation-duration: 3s;
 
-    animation-duration: 5s;
-    animation-name: boxslide;
-
-    @keyframes boxslide {
-        from {
-            margin-left: 100%;
-            width: 300%;
-        }
-
-        to {
-            margin-left: 0;
-            width: 100%
-        }
+    @keyframes moveimage{
+        from{ transform: translateX(100%)}
+        to{ transform: translateX(0)}
     }
 
     @media (max-width: 1040px) {

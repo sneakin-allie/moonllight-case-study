@@ -344,12 +344,20 @@ export const StyledNotesForm = styled.div`
         letter-spacing: 0.25em;
         margin-top: 2.5rem; 
         padding: 0 1.5rem;
-        transition: font-size 3s ease-in;
+        transition: all 1s;
         width: 19.125rem;
 
-        :hover {
+        :hover, :focus {
             cursor: pointer;
-            font-size: 1.5em;
+            background-color: ${({ theme }) => theme.colors.mint};
+        }
+
+        span {
+            transition: transform 1s;
+        }
+
+        span:hover, :focus {
+            transform: rotate(360deg);
         }
 
         @media (max-width: 560px) {

@@ -45,6 +45,16 @@ export const StyledNum = styled.div`
         margin: 0;
         text-align: center;
         width: 4.5rem;
+
+        animation-name: spin;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        @keyframes spin {
+            from { transform: rotate(0deg) };
+            to { transform: rotate(360deg) };
+        }
     }
 
     h1 { // Section title
